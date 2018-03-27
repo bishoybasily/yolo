@@ -4,14 +4,11 @@
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.springandroid</groupId>
 	<artifactId>processor</artifactId>
 	<version>1.0.0</version>
 
-	<!--<packaging>jar</packaging>-->
-
 	<parent>
-		<groupId>com.springandroid</groupId>
+		<groupId>com.yolo</groupId>
 		<artifactId>parent</artifactId>
 		<version>1.0.0</version>
 	</parent>
@@ -47,7 +44,7 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.springandroid</groupId>
+			<groupId>com.yolo</groupId>
 			<artifactId>annotations</artifactId>
 			<version>1.0.0</version>
 		</dependency>
@@ -63,14 +60,8 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
-					<!--<compilerArgument>-proc:none</compilerArgument>-->
 				</configuration>
 			</plugin>
-
-			<!--<plugin>-->
-			<!--<groupId>org.apache.maven.plugins</groupId>-->
-			<!--<artifactId>maven-jar-plugin</artifactId>-->
-			<!--</plugin>-->
 
 		</plugins>
 	</build>
