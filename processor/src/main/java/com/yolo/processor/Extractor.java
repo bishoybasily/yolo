@@ -1,9 +1,12 @@
 package com.yolo.processor;
 
+import javax.annotation.processing.Filer;
+import javax.annotation.processing.Messager;
 import javax.annotation.processing.RoundEnvironment;
 import javax.lang.model.element.ElementKind;
-import javax.lang.model.element.ExecutableElement;
 import javax.lang.model.element.TypeElement;
+import javax.lang.model.util.Elements;
+import javax.lang.model.util.Types;
 import java.lang.annotation.Annotation;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -12,25 +15,27 @@ public class Extractor {
 
 	private RoundEnvironment roundEnvironment;
 
-	public Extractor(RoundEnvironment roundEnvironment) {
+	private Filer filer;
+	private Types types;
+	private Elements elements;
+	private Messager messager;
+
+	public Extractor(RoundEnvironment roundEnvironment, Filer filer, Types types, Elements elements, Messager messager) {
 		this.roundEnvironment = roundEnvironment;
+		this.filer = filer;
+		this.types = types;
+		this.elements = elements;
+		this.messager = messager;
+
 	}
 
-	public Set<TypeElement> classesAnnotatedWith(Class<? extends Annotation> a) {
+	public Set<TypeElementWrapper> classesAnnotatedWith(Class<? extends Annotation> a) {
 		return roundEnvironment.getElementsAnnotatedWith(a)
 				.stream()
 				.filter(elem -> elem.getKind() == ElementKind.CLASS)
 				.map(TypeElement.class::cast)
+				.map(typeElement -> new TypeElementWrapper(typeElement, filer, types, elements, messager))
 				.collect(Collectors.toSet());
 	}
-
-	public Set<ExecutableElement> methodsAnnotatedWith(TypeElement typeElement, Class<? extends Annotation> a) {
-		return typeElement.getEnclosedElements()
-				.stream()
-				.filter(e -> e.getKind() == ElementKind.METHOD && e.getAnnotation(a) != null)
-				.map(ExecutableElement.class::cast)
-				.collect(Collectors.toSet());
-	}
-
 
 }

@@ -4,4 +4,5 @@ com/yolo/annotations/Component.class
 com/yolo/annotations/Job.class
 com/yolo/annotations/EnableGraph.class
 com/yolo/annotations/Worker.class
+com/yolo/annotations/Configuration.class
 com/yolo/annotations/EnableWorker.class

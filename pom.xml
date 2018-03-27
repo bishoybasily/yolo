@@ -13,9 +13,10 @@
 		<module>annotations</module>
 		<module>processor</module>
 
+		<module>sample</module>
+
 		<module>demo</module>
 
-		<module>sample</module>
 	</modules>
 
 </project>

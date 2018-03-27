@@ -1,4 +1,4 @@
-package com.yolo.processor;
+package com.yolo.processor.worker;
 
 import com.google.auto.service.AutoService;
 import com.squareup.javapoet.CodeBlock;
@@ -6,6 +6,10 @@ import com.squareup.javapoet.MethodSpec;
 import com.squareup.javapoet.TypeSpec;
 import com.yolo.annotations.Job;
 import com.yolo.annotations.Worker;
+import com.yolo.processor.Annotations;
+import com.yolo.processor.ClassNames;
+import com.yolo.processor.Extractor;
+import com.yolo.processor.ProcessorBase;
 
 import javax.annotation.processing.Processor;
 import javax.annotation.processing.SupportedAnnotationTypes;
@@ -22,9 +26,9 @@ public class ProcessorWorker extends ProcessorBase {
 	public boolean process(Extractor extractor) {
 
 		extractor.classesAnnotatedWith(Worker.class)
-				.forEach(typeElement -> {
+				.forEach(tew -> {
 
-					String elementClassName = "Worker" + name(typeElement);
+					String elementClassName = "Worker" + tew.name();
 					TypeSpec.Builder elementWorkerClass = TypeSpec.classBuilder(elementClassName)
 							.addModifiers(Modifier.PUBLIC)
 							.superclass(ClassNames.INTENT_SERVICE_CLASS);
@@ -36,22 +40,22 @@ public class ProcessorWorker extends ProcessorBase {
 
 					Set<String> actions = new HashSet<>();
 
-					extractor.methodsAnnotatedWith(typeElement, Job.class)
-							.forEach(executableElement -> {
+					tew.methodsAnnotatedWith(Job.class)
+							.forEach(eew -> {
 
-								MethodSpec.Builder elementJobFunction = MethodSpec.methodBuilder(name(executableElement))
+								MethodSpec.Builder elementJobFunction = MethodSpec.methodBuilder(tew.name())
 										.addModifiers(Modifier.PUBLIC)
 										.addParameter(ClassNames.INTENT_CLASS, "intent");
 								elementWorkerClass.addMethod(elementJobFunction.build());
 
-								MethodSpec.Builder elementExecuteJobFunction = MethodSpec.methodBuilder("execute" + capitalizeFirstLetter(name(executableElement)) + "Job")
+								MethodSpec.Builder elementExecuteJobFunction = MethodSpec.methodBuilder("execute" + upperFirstLetter(tew.name()) + "Job")
 										.addModifiers(Modifier.PUBLIC, Modifier.STATIC)
 										.addParameter(ClassNames.CONTEXT_CLASS, "context")
 										.addParameter(ClassNames.INTENT_CLASS, "intent")
-										.addStatement("context.startService(intent.setClass(context, " + packageName(typeElement) + "." + name(typeElement) + ".class).setAction(\"" + name(executableElement) + "\"))");
+										.addStatement("context.startService(intent.setClass(context, " + tew.packageReference() + "." + tew.name() + ".class).setAction(\"" + eew.name() + "\"))");
 								elementWorkerClass.addMethod(elementExecuteJobFunction.build());
 
-								actions.add(name(executableElement));
+								actions.add(tew.name());
 
 							});
 
@@ -69,7 +73,7 @@ public class ProcessorWorker extends ProcessorBase {
 
 					elementWorkerClass.addMethod(workerOnHandleIntentFunction.build());
 
-					flush(packageName(typeElement), elementWorkerClass.build());
+					flush(tew.packageReference(), elementWorkerClass.build());
 
 				});
 

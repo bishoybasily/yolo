@@ -32,9 +32,10 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.google.googlejavaformat</groupId>
-			<artifactId>google-java-format</artifactId>
-			<version>1.5</version>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.16.20</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<dependency>

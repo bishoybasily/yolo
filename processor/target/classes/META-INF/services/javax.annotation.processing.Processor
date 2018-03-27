@@ -1,2 +1,2 @@
-com.yolo.processor.ProcessorGraph
-com.yolo.processor.ProcessorWorker
+com.yolo.processor.graph.ProcessorGraph
+com.yolo.processor.worker.ProcessorWorker

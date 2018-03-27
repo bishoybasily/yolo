@@ -5,7 +5,6 @@ import com.squareup.javapoet.TypeSpec;
 
 import javax.annotation.processing.*;
 import javax.lang.model.SourceVersion;
-import javax.lang.model.element.Element;
 import javax.lang.model.element.TypeElement;
 import javax.lang.model.util.Elements;
 import javax.lang.model.util.Types;
@@ -34,21 +33,17 @@ public abstract class ProcessorBase extends AbstractProcessor {
 
 	@Override
 	public final boolean process(Set<? extends TypeElement> annotations, RoundEnvironment roundEnv) {
-		return process(new Extractor(roundEnv));
+		return process(new Extractor(roundEnv, filer, types, elements, messager));
 	}
 
 	public abstract boolean process(Extractor extractor);
 
-	protected String name(Element element) {
-		return element.getSimpleName().toString();
-	}
-
-	protected String packageName(Element element) {
-		return elements.getPackageOf(element).getQualifiedName().toString();
-	}
-
-	protected String capitalizeFirstLetter(String input) {
+	protected String upperFirstLetter(String input) {
 		return input.substring(0, 1).toUpperCase() + input.substring(1);
+	}
+
+	protected String lowerFirstLetter(String input) {
+		return input.substring(0, 1).toLowerCase() + input.substring(1);
 	}
 
 	protected void flush(String packageName, TypeSpec typeSpec) {
