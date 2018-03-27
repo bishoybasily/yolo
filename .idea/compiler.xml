@@ -18,7 +18,6 @@
       <module name="parent" target="1.5" />
       <module name="processor" target="1.8" />
       <module name="sample" target="1.8" />
-      <module name="yolo" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
