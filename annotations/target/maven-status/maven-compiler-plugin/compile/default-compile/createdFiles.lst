@@ -1,0 +1,7 @@
+com/springandroid/annotations/Job.class
+com/springandroid/annotations/Autowired.class
+com/springandroid/annotations/Bean.class
+com/springandroid/annotations/Component.class
+com/springandroid/annotations/EnableWorker.class
+com/springandroid/annotations/EnableGraph.class
+com/springandroid/annotations/Worker.class

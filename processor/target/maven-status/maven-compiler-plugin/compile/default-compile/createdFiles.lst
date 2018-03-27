@@ -1,0 +1,10 @@
+com/springandroid/processor/ProcessorBase.class
+com/springandroid/processor/ClassNames.class
+com/springandroid/processor/Annotations.class
+com/springandroid/processor/Main.class
+META-INF/services/javax.annotation.processing.Processor
+com/springandroid/processor/Factory.class
+com/springandroid/processor/User.class
+com/springandroid/processor/ProcessorWorker.class
+com/springandroid/processor/ProcessorGraph.class
+com/springandroid/processor/Extractor.class
