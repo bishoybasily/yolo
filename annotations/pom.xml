@@ -13,6 +13,16 @@
 		<version>1.0.0</version>
 	</parent>
 
+	<dependencies>
+
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<version>1</version>
+		</dependency>
+
+	</dependencies>
+
 	<build>
 		<plugins>
 

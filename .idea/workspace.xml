@@ -3,11 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="8eeb9ad4-19a7-4b86-8fae-e673b56e7ab4" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/annotations/annotations.iml" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/annotations.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/annotations/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/annotations/target/annotations-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/target/annotations-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/annotations/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/target/demo-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/demo-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/graph/ProcessorGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/graph/ProcessorGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/processor/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/processor/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/processor/target/processor-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/processor/target/processor-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sample/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sample/target/maven-archiver/pom.properties" afterDir="false" />
@@ -41,14 +44,77 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProcessorGraph.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProcessorGraph.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/graph/ProcessorGraph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="47" column="74" selection-start-line="47" selection-start-column="74" selection-end-line="47" selection-end-column="74" />
+            <state relative-caret-position="615">
+              <caret line="69" column="64" selection-start-line="69" selection-start-column="64" selection-end-line="69" selection-end-column="64" />
               <folding>
                 <element signature="method#temporary#0;class#ProcessorGraph#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Autowired.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/annotations/src/main/java/com/yolo/annotations/Autowired.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="157">
+              <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/annotations/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Named.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/javax/inject/javax.inject/1/javax.inject-1-sources.jar!/javax/inject/Named.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Singleton.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/javax/inject/javax.inject/1/javax.inject-1-sources.jar!/javax/inject/Singleton.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Scope.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/javax/inject/javax.inject/1/javax.inject-1-sources.jar!/javax/inject/Scope.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="689">
+              <caret line="78" column="26" lean-forward="true" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Qualifier.java" pinned="false" current-in-tab="true">
+        <entry file="jar://$MAVEN_REPOSITORY$/javax/inject/javax.inject/1/javax.inject-1-sources.jar!/javax/inject/Qualifier.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -108,8 +174,9 @@
         <option value="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/ActivityOne.java" />
         <option value="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/Main.java" />
         <option value="$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/worker/ProcessorWorker.java" />
-        <option value="$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/graph/ProcessorGraph.java" />
         <option value="$PROJECT_DIR$/demo/target/generated-sources/annotations/com/yolo/generated/Graph.java" />
+        <option value="$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/graph/ProcessorGraph.java" />
+        <option value="$PROJECT_DIR$/annotations/pom.xml" />
       </list>
     </option>
   </component>
@@ -131,12 +198,7 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+          <item name="annotations" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
       </expand>
       <select />
@@ -163,167 +225,25 @@
             </path>
             <path>
               <item name="parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yolo" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yolo" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yolo" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yolo" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yolo" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yolo" type="462c0819:PsiDirectoryNode" />
-              <item name="processor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yolo" type="462c0819:PsiDirectoryNode" />
-              <item name="processor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yolo" type="462c0819:PsiDirectoryNode" />
-              <item name="processor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yolo" type="462c0819:PsiDirectoryNode" />
-              <item name="processor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yolo" type="462c0819:PsiDirectoryNode" />
-              <item name="processor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="processor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yolo" type="462c0819:PsiDirectoryNode" />
-              <item name="processor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="processor" type="462c0819:PsiDirectoryNode" />
-              <item name="graph" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yolo" type="462c0819:PsiDirectoryNode" />
-              <item name="processor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="processor" type="462c0819:PsiDirectoryNode" />
-              <item name="worker" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yolo" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yolo" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yolo" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yolo" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yolo" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
               <item name="parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="Maven: javax.inject:javax.inject:1" type="70bed36:NamedLibraryElementNode" />
             </path>
             <path>
               <item name="parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="Maven: javax.inject:javax.inject:1" type="70bed36:NamedLibraryElementNode" />
+              <item name="javax.inject-1.jar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="javax" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="javax" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="javax" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="element" type="462c0819:PsiDirectoryNode" />
+              <item name="Maven: javax.inject:javax.inject:1" type="70bed36:NamedLibraryElementNode" />
+              <item name="javax.inject-1.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="inject" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -455,7 +375,7 @@
       <workItem from="1522171717517" duration="13993000" />
       <workItem from="1522188810730" duration="1931000" />
       <workItem from="1522243436582" duration="11474000" />
-      <workItem from="1522258201471" duration="1119000" />
+      <workItem from="1522258201471" duration="3167000" />
     </task>
     <task id="LOCAL-00001" summary="graph basic impl.">
       <created>1522190725811</created>
@@ -471,11 +391,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522258038850</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="cleaner recursive graph">
+      <created>1522259427645</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1522259427646</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28785000" />
+    <option name="totallyTimeSpent" value="30833000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="48" y="-11" width="1873" height="1092" extended-state="6" />
@@ -486,15 +413,15 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.39912522" side_tool="true" visible="true" weight="0.15170941" />
-      <window_info active="true" anchor="right" id="Maven Projects" order="3" visible="true" weight="0.12793876" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.39912522" side_tool="true" visible="true" weight="0.09508547" />
+      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.22361946" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.82558775" weight="0.2820513" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6008748" visible="true" weight="0.15170941" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6008748" weight="0.09508547" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11427009" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17495899" />
       <window_info anchor="right" id="Database" order="3" weight="0.32968834" />
       <window_info id="Learn" order="2" />
       <window_info anchor="right" id="SciView" order="4" />
@@ -551,7 +478,8 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="graph basic impl." />
     <MESSAGE value="before enhancing the graph" />
-    <option name="LAST_COMMIT_MESSAGE" value="before enhancing the graph" />
+    <MESSAGE value="cleaner recursive graph" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleaner recursive graph" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -569,54 +497,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/graph/ProcessorGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-          <folding>
-            <element signature="method#temporary#0;class#ProcessorGraph#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/worker/ProcessorWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="36" column="58" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/ElementWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-          <folding>
-            <element signature="method#ElementWrapper#0;class#ElementWrapper#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/TypeElementWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/target/generated-sources/annotations/com/yolo/generated/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/VariableElementWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/ExecutableElementWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -644,6 +524,8 @@
           <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
           <folding>
             <element signature="method#ElementWrapper#0;class#ElementWrapper#0" />
+            <element signature="e#1051#1052#0" expanded="true" />
+            <element signature="e#1090#1091#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -880,13 +762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/worker/ProcessorWorker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -913,11 +788,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/graph/ProcessorGraph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="47" column="74" selection-start-line="47" selection-start-column="74" selection-end-line="47" selection-end-column="74" />
+        <state relative-caret-position="615">
+          <caret line="69" column="64" selection-start-line="69" selection-start-column="64" selection-end-line="69" selection-end-column="64" />
           <folding>
             <element signature="method#temporary#0;class#ProcessorGraph#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/annotations/src/main/java/com/yolo/annotations/Autowired.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/annotations/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/inject/javax.inject/1/javax.inject-1-sources.jar!/javax/inject/Named.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/inject/javax.inject/1/javax.inject-1-sources.jar!/javax/inject/Singleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/inject/javax.inject/1/javax.inject-1-sources.jar!/javax/inject/Scope.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="689">
+          <caret line="78" column="26" lean-forward="true" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/inject/javax.inject/1/javax.inject-1-sources.jar!/javax/inject/Qualifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
         </state>
       </provider>
     </entry>
