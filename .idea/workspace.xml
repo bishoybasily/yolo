@@ -5,26 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/annotations/target/annotations-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/target/annotations-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/annotations/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/ActivityOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/ActivityOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/FeatureOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/FeatureOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/Graph.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/RepositoryMobiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/RepositoryMobiles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/RepositoryUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/RepositoryUsers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/ServiceRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/ServiceRegistration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/target/demo-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/demo-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/ExecutableElementWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/ExecutableElementWrapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/Extractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/Extractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/TypeElementWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/TypeElementWrapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/graph/ProcessorGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/graph/ProcessorGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/worker/ProcessorWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/worker/ProcessorWorker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/processor/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/processor/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/processor/target/processor-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/processor/target/processor-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sample/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sample/target/maven-archiver/pom.properties" afterDir="false" />
@@ -61,8 +44,8 @@
       <file leaf-file-name="ProcessorGraph.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/graph/ProcessorGraph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
+            <state relative-caret-position="255">
+              <caret line="47" column="74" selection-start-line="47" selection-start-column="74" selection-end-line="47" selection-end-column="74" />
               <folding>
                 <element signature="method#temporary#0;class#ProcessorGraph#0" />
               </folding>
@@ -125,8 +108,8 @@
         <option value="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/ActivityOne.java" />
         <option value="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/Main.java" />
         <option value="$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/worker/ProcessorWorker.java" />
-        <option value="$PROJECT_DIR$/demo/target/generated-sources/annotations/com/yolo/generated/Graph.java" />
         <option value="$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/graph/ProcessorGraph.java" />
+        <option value="$PROJECT_DIR$/demo/target/generated-sources/annotations/com/yolo/generated/Graph.java" />
       </list>
     </option>
   </component>
@@ -171,9 +154,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -349,6 +329,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -471,7 +454,8 @@
       <workItem from="1522171631675" duration="73000" />
       <workItem from="1522171717517" duration="13993000" />
       <workItem from="1522188810730" duration="1931000" />
-      <workItem from="1522243436582" duration="11142000" />
+      <workItem from="1522243436582" duration="11474000" />
+      <workItem from="1522258201471" duration="1119000" />
     </task>
     <task id="LOCAL-00001" summary="graph basic impl.">
       <created>1522190725811</created>
@@ -480,45 +464,52 @@
       <option name="project" value="LOCAL" />
       <updated>1522190725811</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="before enhancing the graph">
+      <created>1522258038850</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1522258038850</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27334000" />
+    <option name="totallyTimeSpent" value="28785000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="48" y="-11" width="1873" height="1092" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.3969382" side_tool="true" visible="true" weight="0.15170941" />
-      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.12793876" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32968834" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.4969929" weight="0.3482906" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.4958994" weight="0.3482906" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6030618" visible="true" weight="0.15170941" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.39912522" side_tool="true" visible="true" weight="0.15170941" />
+      <window_info active="true" anchor="right" id="Maven Projects" order="3" visible="true" weight="0.12793876" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.82558775" weight="0.2820513" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6008748" visible="true" weight="0.15170941" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1481684" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49863315" weight="0.18376069" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11427009" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32968834" />
       <window_info id="Learn" order="2" />
       <window_info anchor="right" id="SciView" order="4" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49863315" weight="0.18376069" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,13 +518,40 @@
   <component name="UpdateCopyrightCheckinHandler">
     <option name="UPDATE_COPYRIGHT" value="true" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="graph basic impl." />
-    <option name="LAST_COMMIT_MESSAGE" value="graph basic impl." />
+    <MESSAGE value="before enhancing the graph" />
+    <option name="LAST_COMMIT_MESSAGE" value="before enhancing the graph" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -543,7 +561,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/graph/ProcessorGraph.java</url>
-          <line>115</line>
+          <line>98</line>
           <properties />
         </line-breakpoint>
       </breakpoints>
@@ -781,13 +799,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/Graph.java" />
     <entry file="file://$PROJECT_DIR$/processor/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -894,18 +906,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo/target/generated-sources/annotations/com/yolo/generated/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="324">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/graph/ProcessorGraph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
+        <state relative-caret-position="255">
+          <caret line="47" column="74" selection-start-line="47" selection-start-column="74" selection-end-line="47" selection-end-column="74" />
           <folding>
             <element signature="method#temporary#0;class#ProcessorGraph#0" />
           </folding>

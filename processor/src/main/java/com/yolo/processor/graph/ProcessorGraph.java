@@ -13,7 +13,6 @@ import javax.annotation.processing.Processor;
 import javax.annotation.processing.SupportedAnnotationTypes;
 import javax.inject.Provider;
 import javax.lang.model.element.Modifier;
-import java.util.HashMap;
 import java.util.StringJoiner;
 
 @AutoService(Processor.class)
@@ -21,16 +20,10 @@ import java.util.StringJoiner;
 @SupportedAnnotationTypes(Annotations.ENABLE_GRAPH)
 public class ProcessorGraph extends ProcessorBase {
 
-	private HashMap<TypeName, String> rts = new HashMap<>();
-
 	@Override
 	public boolean process(Extractor extractor) {
 
 		TypeSpec.Builder graphClass = TypeSpec.classBuilder("Graph")
-				.addModifiers(Modifier.PUBLIC, Modifier.FINAL);
-
-		// graph constructor
-		MethodSpec.Builder graphConstructor = MethodSpec.constructorBuilder()
 				.addModifiers(Modifier.PUBLIC);
 
 		extractor.classesAnnotatedWith(Configuration.class)
@@ -38,11 +31,32 @@ public class ProcessorGraph extends ProcessorBase {
 
 					// graph fields (configurations)
 					FieldSpec.Builder configurationField = FieldSpec.builder(tew.typeName(), lowerFirstLetter(tew.name()))
-							.addModifiers(Modifier.PRIVATE, Modifier.FINAL);
+							.addModifiers(Modifier.PRIVATE);
 					graphClass.addField(configurationField.build());
 
-					// save resolved references for upcoming initializations
-					rts.put(tew.typeName(), "this." + lowerFirstLetter(tew.name()));
+					if (tew.getDependencies().isEmpty()) {
+
+						MethodSpec.Builder graphBeanProviderFunction = MethodSpec.methodBuilder(lowerFirstLetter(tew.name()))
+								.addModifiers(Modifier.PUBLIC)
+								.returns(tew.typeName())
+								.addStatement("if ( this." + lowerFirstLetter(tew.name()) + " == null ) this." + lowerFirstLetter(tew.name()) + " = new " + tew.name() + "()")
+								.addStatement("return this." + lowerFirstLetter(tew.name()));
+						graphClass.addMethod(graphBeanProviderFunction.build());
+
+					} else {
+
+						StringJoiner stringJoiner = new StringJoiner(",");
+						tew.getDependencies().forEach(vew -> stringJoiner.add(vew.name() + "()"));
+						String commaSeparatedParams = stringJoiner.toString();
+
+						MethodSpec.Builder graphBeanProviderFunction = MethodSpec.methodBuilder(lowerFirstLetter(tew.name()))
+								.addModifiers(Modifier.PUBLIC)
+								.returns(tew.typeName())
+								.addStatement("if ( this." + lowerFirstLetter(tew.name()) + " == null ) this." + lowerFirstLetter(tew.name()) + " = new " + tew.name() + "(" + commaSeparatedParams + ")")
+								.addStatement("return this." + lowerFirstLetter(tew.name()));
+						graphClass.addMethod(graphBeanProviderFunction.build());
+
+					}
 
 					// add beans functions
 					tew.methodsAnnotatedWith(Bean.class)
@@ -53,43 +67,14 @@ public class ProcessorGraph extends ProcessorBase {
 										.addModifiers(Modifier.PRIVATE);
 								graphClass.addField(dependencyField.build());
 
-								// save resolved references for upcoming initializations
-								rts.put(eew.returnTypeName(), "this." + lowerFirstLetter(eew.name()));
-
-							});
-
-				});
-
-		extractor.classesAnnotatedWith(Configuration.class)
-				.forEach(tew -> {
-
-					// append "this.whatever = new Whatever();" statements to the constructor graph
-					if (tew.getDependencies().isEmpty()) {
-
-						graphConstructor.addStatement("this." + lowerFirstLetter(tew.name() + " = new " + upperFirstLetter(tew.name() + "") + "()"));
-
-					} else {
-
-						StringJoiner stringJoiner = new StringJoiner(",");
-						tew.getDependencies().forEach(vew -> stringJoiner.add(vew.name() + "()"));
-						String commaSeparatedParams = stringJoiner.toString();
-
-						graphConstructor.addStatement("this." + lowerFirstLetter(tew.name() + " = new " + upperFirstLetter(tew.name() + "") + "(" + commaSeparatedParams + ")"));
-					}
-
-					// add beans functions
-					tew.methodsAnnotatedWith(Bean.class)
-							.forEach(eew -> {
-
 								if (eew.getParams().isEmpty()) {
 
 									MethodSpec.Builder graphBeanProviderFunction = MethodSpec.methodBuilder(eew.name())
 											.addModifiers(Modifier.PUBLIC)
 											.returns(eew.returnTypeName())
-											.addStatement("if ( this." + lowerFirstLetter(eew.name()) + " == null ) this." + lowerFirstLetter(eew.name()) + " = " + lowerFirstLetter(tew.name()) + "." + eew.name() + "()")
+											.addStatement("if ( this." + lowerFirstLetter(eew.name()) + " == null ) this." + lowerFirstLetter(eew.name()) + " = " + lowerFirstLetter(tew.name()) + "()." + eew.name() + "()")
 											.addStatement("return this." + lowerFirstLetter(eew.name()));
 									graphClass.addMethod(graphBeanProviderFunction.build());
-
 
 								} else {
 
@@ -100,7 +85,7 @@ public class ProcessorGraph extends ProcessorBase {
 									MethodSpec.Builder graphBeanProviderFunction = MethodSpec.methodBuilder(eew.name())
 											.addModifiers(Modifier.PUBLIC)
 											.returns(eew.returnTypeName())
-											.addStatement("if ( this." + lowerFirstLetter(eew.name()) + " == null ) this." + lowerFirstLetter(eew.name()) + " = " + lowerFirstLetter(tew.name()) + "." + eew.name() + "(" + commaSeparatedParams + ")")
+											.addStatement("if ( this." + lowerFirstLetter(eew.name()) + " == null ) this." + lowerFirstLetter(eew.name()) + " = " + lowerFirstLetter(tew.name()) + "()." + eew.name() + "(" + commaSeparatedParams + ")")
 											.addStatement("return this." + lowerFirstLetter(eew.name()));
 
 									graphClass.addMethod(graphBeanProviderFunction.build());
@@ -110,8 +95,6 @@ public class ProcessorGraph extends ProcessorBase {
 							});
 
 				});
-
-		graphClass.addMethod(graphConstructor.build());
 
 		flush("com.yolo.generated", graphClass.build());
 
