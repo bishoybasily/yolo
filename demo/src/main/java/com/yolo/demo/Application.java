@@ -29,4 +29,9 @@ public class Application {
 		return new RepositoryUsers(database);
 	}
 
+	@Bean
+	public ServiceRegistration serviceRegistration(RepositoryUsers repositoryUsers, RepositoryMobiles repositoryMobiles) {
+		return new ServiceRegistration(repositoryUsers, repositoryMobiles);
+	}
+
 }

@@ -50,6 +50,7 @@ public class TypeElementWrapper extends ElementWrapper<TypeElement> implements C
 				.filter(e -> e.getKind() == ElementKind.METHOD)
 				.map(ExecutableElement.class::cast)
 				.map(executableElement -> new ExecutableElementWrapper(executableElement, filer, types, elements, messager).setParent(this))
+				.sorted()
 				.collect(Collectors.toList());
 
 	}
@@ -58,6 +59,7 @@ public class TypeElementWrapper extends ElementWrapper<TypeElement> implements C
 		return methods
 				.stream()
 				.filter(e -> e.annotatedWith(a))
+				.sorted()
 				.collect(Collectors.toList());
 	}
 

@@ -41,5 +41,6 @@
     <orderEntry type="library" name="Maven: org.eclipse.core:org.eclipse.core.commands:3.6.0" level="project" />
     <orderEntry type="library" name="Maven: javax.inject:javax.inject:1" level="project" />
     <orderEntry type="library" name="Maven: com.squareup:javapoet:1.9.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.projectlombok:lombok:1.16.20" level="project" />
   </component>
 </module>

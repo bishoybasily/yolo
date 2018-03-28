@@ -13,7 +13,7 @@ import javax.lang.model.element.ExecutableElement;
 import javax.lang.model.element.VariableElement;
 import javax.lang.model.util.Elements;
 import javax.lang.model.util.Types;
-import java.util.Set;
+import java.util.List;
 import java.util.stream.Collectors;
 
 @Getter
@@ -21,7 +21,7 @@ import java.util.stream.Collectors;
 @Accessors(chain = true)
 public class ExecutableElementWrapper extends ElementWrapper<ExecutableElement> implements Comparable<ExecutableElementWrapper> {
 
-	protected Set<VariableElementWrapper> params;
+	protected List<VariableElementWrapper> params;
 	private TypeElementWrapper parent;
 
 	public ExecutableElementWrapper(ExecutableElement element, Filer filer, Types types, Elements elements, Messager messager) {
@@ -32,7 +32,7 @@ public class ExecutableElementWrapper extends ElementWrapper<ExecutableElement> 
 				.filter(e -> e.getKind() == ElementKind.PARAMETER)
 				.map(VariableElement.class::cast)
 				.map(variableElement -> new VariableElementWrapper(variableElement, filer, types, elements, messager).setParent(this))
-				.collect(Collectors.toSet());
+				.collect(Collectors.toList());
 	}
 
 	public TypeName returnTypeName() {

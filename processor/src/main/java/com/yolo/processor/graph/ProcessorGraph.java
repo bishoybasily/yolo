@@ -5,67 +5,111 @@ import com.squareup.javapoet.*;
 import com.yolo.annotations.Bean;
 import com.yolo.annotations.Component;
 import com.yolo.annotations.Configuration;
-import com.yolo.processor.*;
+import com.yolo.processor.Annotations;
+import com.yolo.processor.Extractor;
+import com.yolo.processor.ProcessorBase;
 
 import javax.annotation.processing.Processor;
 import javax.annotation.processing.SupportedAnnotationTypes;
 import javax.inject.Provider;
 import javax.lang.model.element.Modifier;
-import java.util.*;
+import java.util.HashMap;
+import java.util.StringJoiner;
 
 @AutoService(Processor.class)
 //@SupportedSourceVersion(SourceVersion.RELEASE_8)
 @SupportedAnnotationTypes(Annotations.ENABLE_GRAPH)
 public class ProcessorGraph extends ProcessorBase {
 
-	private List<TypeElementWrapper> tews = new ArrayList<>();
-	private List<ExecutableElementWrapper> eews = new ArrayList<>();
-
 	private HashMap<TypeName, String> rts = new HashMap<>();
 
 	@Override
 	public boolean process(Extractor extractor) {
 
-		extractor.classesAnnotatedWith(Configuration.class)
-				.forEach(tew -> {
-					if (!tews.contains(tew))
-						tews.add(tew);
-
-					tew.methodsAnnotatedWith(Bean.class).forEach(eew -> {
-						if (!eews.contains(eew))
-							eews.add(eew);
-					});
-
-				});
-
-		Collections.sort(tews);
-		Collections.sort(eews);
-
 		TypeSpec.Builder graphClass = TypeSpec.classBuilder("Graph")
 				.addModifiers(Modifier.PUBLIC, Modifier.FINAL);
 
+		// graph constructor
 		MethodSpec.Builder graphConstructor = MethodSpec.constructorBuilder()
 				.addModifiers(Modifier.PUBLIC);
 
-		tews.forEach(tew -> {
+		extractor.classesAnnotatedWith(Configuration.class)
+				.forEach(tew -> {
 
-			FieldSpec.Builder configurationField = FieldSpec.builder(tew.typeName(), lowerFirstLetter(tew.name()))
-					.addModifiers(Modifier.PRIVATE, Modifier.FINAL);
-			graphClass.addField(configurationField.build());
+					// graph fields (configurations)
+					FieldSpec.Builder configurationField = FieldSpec.builder(tew.typeName(), lowerFirstLetter(tew.name()))
+							.addModifiers(Modifier.PRIVATE, Modifier.FINAL);
+					graphClass.addField(configurationField.build());
 
-			// append this.whatever = new Whatever(); statements
-			if (tew.getDependencies().isEmpty()) {
-				graphConstructor.addStatement("this." + lowerFirstLetter(tew.name() + " = new " + upperFirstLetter(tew.name() + "") + "()"));
-			} else {
-				StringJoiner stringJoiner = new StringJoiner(",");
-				tew.getDependencies().forEach(variableElementWrapper -> stringJoiner.add(rts.get(variableElementWrapper.typeName())));
-				graphConstructor.addStatement("this." + lowerFirstLetter(tew.name() + " = new " + upperFirstLetter(tew.name() + "") + "(" + stringJoiner.toString() + ")"));
-			}
+					// save resolved references for upcoming initializations
+					rts.put(tew.typeName(), "this." + lowerFirstLetter(tew.name()));
 
-			// save resolved references for upcoming initializations
-			rts.put(tew.typeName(), "this." + lowerFirstLetter(tew.name()));
+					// add beans functions
+					tew.methodsAnnotatedWith(Bean.class)
+							.forEach(eew -> {
 
-		});
+								// graph fields (dependencies)
+								FieldSpec.Builder dependencyField = FieldSpec.builder(eew.returnTypeName(), lowerFirstLetter(eew.name()))
+										.addModifiers(Modifier.PRIVATE);
+								graphClass.addField(dependencyField.build());
+
+								// save resolved references for upcoming initializations
+								rts.put(eew.returnTypeName(), "this." + lowerFirstLetter(eew.name()));
+
+							});
+
+				});
+
+		extractor.classesAnnotatedWith(Configuration.class)
+				.forEach(tew -> {
+
+					// append "this.whatever = new Whatever();" statements to the constructor graph
+					if (tew.getDependencies().isEmpty()) {
+
+						graphConstructor.addStatement("this." + lowerFirstLetter(tew.name() + " = new " + upperFirstLetter(tew.name() + "") + "()"));
+
+					} else {
+
+						StringJoiner stringJoiner = new StringJoiner(",");
+						tew.getDependencies().forEach(vew -> stringJoiner.add(vew.name() + "()"));
+						String commaSeparatedParams = stringJoiner.toString();
+
+						graphConstructor.addStatement("this." + lowerFirstLetter(tew.name() + " = new " + upperFirstLetter(tew.name() + "") + "(" + commaSeparatedParams + ")"));
+					}
+
+					// add beans functions
+					tew.methodsAnnotatedWith(Bean.class)
+							.forEach(eew -> {
+
+								if (eew.getParams().isEmpty()) {
+
+									MethodSpec.Builder graphBeanProviderFunction = MethodSpec.methodBuilder(eew.name())
+											.addModifiers(Modifier.PUBLIC)
+											.returns(eew.returnTypeName())
+											.addStatement("if ( this." + lowerFirstLetter(eew.name()) + " == null ) this." + lowerFirstLetter(eew.name()) + " = " + lowerFirstLetter(tew.name()) + "." + eew.name() + "()")
+											.addStatement("return this." + lowerFirstLetter(eew.name()));
+									graphClass.addMethod(graphBeanProviderFunction.build());
+
+
+								} else {
+
+									StringJoiner stringJoiner = new StringJoiner(",");
+									eew.getParams().forEach(vew -> stringJoiner.add(vew.name() + "()"));
+									String commaSeparatedParams = stringJoiner.toString();
+
+									MethodSpec.Builder graphBeanProviderFunction = MethodSpec.methodBuilder(eew.name())
+											.addModifiers(Modifier.PUBLIC)
+											.returns(eew.returnTypeName())
+											.addStatement("if ( this." + lowerFirstLetter(eew.name()) + " == null ) this." + lowerFirstLetter(eew.name()) + " = " + lowerFirstLetter(tew.name()) + "." + eew.name() + "(" + commaSeparatedParams + ")")
+											.addStatement("return this." + lowerFirstLetter(eew.name()));
+
+									graphClass.addMethod(graphBeanProviderFunction.build());
+
+								}
+
+							});
+
+				});
 
 		graphClass.addMethod(graphConstructor.build());
 

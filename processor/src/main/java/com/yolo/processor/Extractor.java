@@ -8,7 +8,7 @@ import javax.lang.model.element.TypeElement;
 import javax.lang.model.util.Elements;
 import javax.lang.model.util.Types;
 import java.lang.annotation.Annotation;
-import java.util.Set;
+import java.util.List;
 import java.util.stream.Collectors;
 
 public class Extractor {
@@ -29,13 +29,14 @@ public class Extractor {
 
 	}
 
-	public Set<TypeElementWrapper> classesAnnotatedWith(Class<? extends Annotation> a) {
+	public List<TypeElementWrapper> classesAnnotatedWith(Class<? extends Annotation> a) {
 		return roundEnvironment.getElementsAnnotatedWith(a)
 				.stream()
 				.filter(elem -> elem.getKind() == ElementKind.CLASS)
 				.map(TypeElement.class::cast)
 				.map(typeElement -> new TypeElementWrapper(typeElement, filer, types, elements, messager))
-				.collect(Collectors.toSet());
+				.sorted()
+				.collect(Collectors.toList());
 	}
 
 }

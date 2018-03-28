@@ -1,8 +1,12 @@
 package com.yolo.demo;
 
-import com.yolo.annotations.Component;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.experimental.Accessors;
 
-@Component
+@Getter
+@Setter
+@Accessors(chain = true)
 public class ServiceRegistration {
 
 	private RepositoryUsers repositoryUsers;

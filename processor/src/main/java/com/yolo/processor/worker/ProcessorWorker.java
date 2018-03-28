@@ -43,19 +43,19 @@ public class ProcessorWorker extends ProcessorBase {
 					tew.methodsAnnotatedWith(Job.class)
 							.forEach(eew -> {
 
-								MethodSpec.Builder elementJobFunction = MethodSpec.methodBuilder(tew.name())
+								MethodSpec.Builder elementJobFunction = MethodSpec.methodBuilder(eew.name())
 										.addModifiers(Modifier.PUBLIC)
 										.addParameter(ClassNames.INTENT_CLASS, "intent");
 								elementWorkerClass.addMethod(elementJobFunction.build());
 
-								MethodSpec.Builder elementExecuteJobFunction = MethodSpec.methodBuilder("execute" + upperFirstLetter(tew.name()) + "Job")
+								MethodSpec.Builder elementExecuteJobFunction = MethodSpec.methodBuilder("execute" + upperFirstLetter(eew.name()) + "Job")
 										.addModifiers(Modifier.PUBLIC, Modifier.STATIC)
 										.addParameter(ClassNames.CONTEXT_CLASS, "context")
 										.addParameter(ClassNames.INTENT_CLASS, "intent")
 										.addStatement("context.startService(intent.setClass(context, " + tew.packageReference() + "." + tew.name() + ".class).setAction(\"" + eew.name() + "\"))");
 								elementWorkerClass.addMethod(elementExecuteJobFunction.build());
 
-								actions.add(tew.name());
+								actions.add(eew.name());
 
 							});
 
