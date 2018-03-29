@@ -1,4 +1,5 @@
 com/yolo/annotations/Autowired.class
+com/yolo/annotations/Qualifier.class
 com/yolo/annotations/Bean.class
 com/yolo/annotations/LazyBean.class
 com/yolo/annotations/Job.class

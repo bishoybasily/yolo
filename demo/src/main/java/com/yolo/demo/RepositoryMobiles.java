@@ -14,4 +14,5 @@ public class RepositoryMobiles {
 	public RepositoryMobiles(Database database) {
 		this.database = database;
 	}
+
 }

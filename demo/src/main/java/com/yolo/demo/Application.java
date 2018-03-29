@@ -2,6 +2,7 @@ package com.yolo.demo;
 
 import com.yolo.annotations.Bean;
 import com.yolo.annotations.Configuration;
+import com.yolo.annotations.Qualifier;
 
 @Configuration
 public class Application {
@@ -15,12 +16,24 @@ public class Application {
 	}
 
 	@Bean
-	public Database database(User user) {
-		return new Database(user);
+	@Qualifier("oracle")
+	public Database db1(User user) {
+		return new Oracle(user);
 	}
 
 	@Bean
-	public RepositoryMobiles repositoryMobiles(Database database) {
+	@Qualifier("mongoDb")
+	public Database db2(User user) {
+		return new MongoDb(user);
+	}
+
+	@Bean
+	public Database database(User user) {
+		return new Oracle(user);
+	}
+
+	@Bean
+	public RepositoryMobiles repositoryMobiles(@Qualifier("mongoDb") Database database) {
 		return new RepositoryMobiles(database);
 	}
 

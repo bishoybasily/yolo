@@ -59,7 +59,15 @@ public class ProcessorGraph extends ProcessorBase {
 
 					tew.fields(Autowired.class)
 							.forEach(vew -> {
-								injectFunction.addStatement("" + lowerFirstLetter(tew.name()) + "." + lowerFirstLetter(vew.name()) + " = " + packageName + ".Graph.getInstance()." + lowerFirstLetter(vew.name()) + "()");
+
+								// respect qualifier
+								String dependencyName = lowerFirstLetter(vew.name());
+								String dependencyQualifierName = vew.annotationString(Qualifier.class, "value");
+								if (dependencyQualifierName != null)
+									dependencyName = dependencyQualifierName;
+
+								injectFunction.addStatement("" + lowerFirstLetter(tew.name()) + "." + lowerFirstLetter(vew.name()) + " = " + packageName + ".Graph.getInstance()." + dependencyName + "()");
+
 							});
 
 					injectorClass.addMethod(injectFunction.build());
@@ -104,30 +112,47 @@ public class ProcessorGraph extends ProcessorBase {
 					tew.methods(Bean.class)
 							.forEach(eew -> {
 
+								// respect qualifier
+								String beanName = lowerFirstLetter(eew.name());
+								String beanQualifierName = eew.annotationString(Qualifier.class, "value");
+								if (beanQualifierName != null)
+									beanName = beanQualifierName;
+
 								// graph fields (constructorDependencies)
-								FieldSpec.Builder dependencyField = FieldSpec.builder(eew.returnTypeName(), lowerFirstLetter(eew.name()))
+								FieldSpec.Builder dependencyField = FieldSpec.builder(eew.returnTypeName(), beanName)
 										.addModifiers(Modifier.PRIVATE);
 								graphClass.addField(dependencyField.build());
 
 								if (eew.getParams().isEmpty()) {
 
-									MethodSpec.Builder graphBeanProviderFunction = MethodSpec.methodBuilder(eew.name())
+									MethodSpec.Builder graphBeanProviderFunction = MethodSpec.methodBuilder(beanName)
 											.addModifiers(Modifier.PUBLIC)
 											.returns(eew.returnTypeName())
-											.addStatement("if ( this." + lowerFirstLetter(eew.name()) + " == null ) this." + lowerFirstLetter(eew.name()) + " = " + lowerFirstLetter(tew.name()) + "()." + eew.name() + "()")
-											.addStatement("return this." + lowerFirstLetter(eew.name()));
+											.addStatement("if ( this." + beanName + " == null ) this." + beanName + " = " + lowerFirstLetter(tew.name()) + "()." + eew.name() + "()")
+											.addStatement("return this." + beanName);
 									graphClass.addMethod(graphBeanProviderFunction.build());
 
 								} else {
 
 									StringJoiner stringJoiner = new StringJoiner(",");
-									eew.getParams().forEach(vew -> stringJoiner.add(vew.name() + "()"));
+									eew.getParams().forEach(vew -> {
+
+										// respect qualifier
+										String parameterName = vew.name();
+										String parameterQualifierName = vew.annotationString(Qualifier.class, "value");
+										if (parameterQualifierName != null)
+											parameterName = parameterQualifierName;
+
+										stringJoiner.add(parameterName + "()");
+
+									});
+
 									String commaSeparatedParams = stringJoiner.toString();
 
-									MethodSpec.Builder graphBeanProviderFunction = MethodSpec.methodBuilder(eew.name())
+									MethodSpec.Builder graphBeanProviderFunction = MethodSpec.methodBuilder(beanName)
 											.addModifiers(Modifier.PUBLIC)
-											.addStatement("if ( this." + lowerFirstLetter(eew.name()) + " == null ) this." + lowerFirstLetter(eew.name()) + " = " + lowerFirstLetter(tew.name()) + "()." + eew.name() + "(" + commaSeparatedParams + ")")
-											.addStatement("return this." + lowerFirstLetter(eew.name()))
+											.addStatement("if ( this." + beanName + " == null ) this." + beanName + " = " + lowerFirstLetter(tew.name()) + "()." + eew.name() + "(" + commaSeparatedParams + ")")
+											.addStatement("return this." + beanName)
 											.returns(eew.returnTypeName());
 
 									graphClass.addMethod(graphBeanProviderFunction.build());
@@ -165,7 +190,6 @@ public class ProcessorGraph extends ProcessorBase {
 
 				});
 
-
 		lazyBeans.forEach((typeName, name) -> {
 
 			// graph fields (lazy beans)
@@ -188,7 +212,6 @@ public class ProcessorGraph extends ProcessorBase {
 			graphClass.addMethod(graphBeanSetterFunction.build());
 
 		});
-
 
 		flush(packageName, graphClass.build());
 

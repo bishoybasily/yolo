@@ -10,7 +10,7 @@ public class Main {
 		Graph.getInstance().user(User.bishoy());
 
 		Screen screen = new Screen();
-		System.err.println(screen.activityOne.getServiceRegistration().getRepositoryMobiles().getDatabase().getUser().getName());
+		System.err.println(screen.activityOne.getServiceRegistration().getRepositoryUsers().getDatabase().type());
 
 
 //		System.out.println(screen.activityOne

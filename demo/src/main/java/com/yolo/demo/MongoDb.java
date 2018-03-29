@@ -9,13 +9,13 @@ import lombok.experimental.Accessors;
 @Setter
 @AllArgsConstructor
 @Accessors(chain = true)
-public class Oracle implements Database {
+public class MongoDb implements Database {
 
 	private User user;
 
 	@Override
 	public Type type() {
-		return Type.ORACLE;
+		return Type.MONGODB;
 	}
 
 }

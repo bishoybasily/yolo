@@ -14,10 +14,7 @@ import javax.lang.model.type.TypeMirror;
 import javax.lang.model.util.Elements;
 import javax.lang.model.util.Types;
 import java.lang.annotation.Annotation;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Getter
@@ -53,57 +50,47 @@ public class ElementWrapper<E extends Element> {
 
 	public final List<TypeMirror> annotationTypeMirrors(Class<? extends Annotation> aClass, String key) {
 
-		try {
-			return e.getAnnotationMirrors()
-					.stream()
-					.filter(annotationMirror -> elements.getTypeElement(aClass.getName()).asType().equals(annotationMirror.getAnnotationType()))
-					.findFirst()
-					.map(AnnotationMirror::getElementValues)
-					.map(Map::entrySet)
-					.map(Collection::stream)
-					.map(o -> o.collect(Collectors.toMap(e -> e.getKey().getSimpleName().toString(), Map.Entry::getValue)))
-					.map(o -> o.get(key).getValue())
-					.map(o -> (List<? extends AnnotationValue>) o)
+		Optional<Object> value = getAnnotationValues(aClass, key);
+
+		if (value.isPresent())
+			return value
+					.map(o -> (List<AnnotationValue>) o)
 					.get()
 					.stream()
 					.map(AnnotationValue::getValue)
 					.map(TypeMirror.class::cast)
 					.collect(Collectors.toList());
-		} catch (Exception e) {
-			return Collections.emptyList();
-		}
+		else return Collections.emptyList();
 
-//		return Observable.fromIterable(e.getAnnotationMirrors())
-//				.filter(annotationMirror -> elements.getTypeElement(aClass.getName()).asType().equals(annotationMirror.getAnnotationType()))
-//				.singleElement()
-//				.map(AnnotationMirror::getElementValues)
-//				.map(map -> map.entrySet().stream().collect(Collectors.toMap(e -> e.getKey().getSimpleName().toString(), Map.Entry::getValue)))
-//				.map(stringMap -> stringMap.get(key).getValue())
-//				.map(o -> (List<? extends AnnotationValue>) o)
-//				.map(o -> o.stream().map(AnnotationValue::getValue).map(TypeMirror.class::cast).collect(Collectors.toList()))
-//				.blockingGet();
+	}
 
-//		List<? extends AnnotationValue> typeMirrors = (List<? extends AnnotationValue>) e.getAnnotationMirrors()
-//				.stream()
-//				.filter(annotationMirror -> elements.getTypeElement(aClass.getName()).asType().equals(annotationMirror.getAnnotationType()))
-//				.findFirst()
-//				.get()
-//				.getElementValues()
-//				.entrySet()
-//				.stream()
-//				.collect(Collectors.toMap(e -> e.getKey().getSimpleName().toString(), Map.Entry::getValue))
-//				.get(key)
-//				.getValue();
-//
-//		return typeMirrors.stream()
-//				.map(AnnotationValue::getValue)
-//				.map(TypeMirror.class::cast)
-//				.collect(Collectors.toList());
+
+	public final String annotationString(Class<? extends Annotation> aClass, String key) {
+
+		Optional<Object> value = getAnnotationValues(aClass, key);
+
+		if (value.isPresent())
+			return value
+					.map(o -> (String) o)
+					.get();
+		else return null;
 
 	}
 
 	public final String packageReference() {
 		return elements.getPackageOf(e).getQualifiedName().toString();
+	}
+
+	private Optional<Object> getAnnotationValues(Class<? extends Annotation> aClass, String key) {
+		return e.getAnnotationMirrors()
+				.stream()
+				.filter(annotationMirror -> elements.getTypeElement(aClass.getName()).asType().equals(annotationMirror.getAnnotationType()))
+				.findFirst()
+				.map(AnnotationMirror::getElementValues)
+				.map(Map::entrySet)
+				.map(Collection::stream)
+				.map(o -> o.collect(Collectors.toMap(e -> e.getKey().getSimpleName().toString(), Map.Entry::getValue)))
+				.map(o -> o.get(key).getValue());
 	}
 
 }
