@@ -15,6 +15,7 @@ import javax.lang.model.util.Elements;
 import javax.lang.model.util.Types;
 import java.lang.annotation.Annotation;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -52,22 +53,25 @@ public class ElementWrapper<E extends Element> {
 
 	public final List<TypeMirror> annotationTypeMirrors(Class<? extends Annotation> aClass, String key) {
 
-
-		return e.getAnnotationMirrors()
-				.stream()
-				.filter(annotationMirror -> elements.getTypeElement(aClass.getName()).asType().equals(annotationMirror.getAnnotationType()))
-				.findFirst()
-				.map(AnnotationMirror::getElementValues)
-				.map(Map::entrySet)
-				.map(Collection::stream)
-				.map(o -> o.collect(Collectors.toMap(e -> e.getKey().getSimpleName().toString(), Map.Entry::getValue)))
-				.map(o -> o.get(key).getValue())
-				.map(o -> (List<? extends AnnotationValue>) o)
-				.get()
-				.stream()
-				.map(AnnotationValue::getValue)
-				.map(TypeMirror.class::cast)
-				.collect(Collectors.toList());
+		try {
+			return e.getAnnotationMirrors()
+					.stream()
+					.filter(annotationMirror -> elements.getTypeElement(aClass.getName()).asType().equals(annotationMirror.getAnnotationType()))
+					.findFirst()
+					.map(AnnotationMirror::getElementValues)
+					.map(Map::entrySet)
+					.map(Collection::stream)
+					.map(o -> o.collect(Collectors.toMap(e -> e.getKey().getSimpleName().toString(), Map.Entry::getValue)))
+					.map(o -> o.get(key).getValue())
+					.map(o -> (List<? extends AnnotationValue>) o)
+					.get()
+					.stream()
+					.map(AnnotationValue::getValue)
+					.map(TypeMirror.class::cast)
+					.collect(Collectors.toList());
+		} catch (Exception e) {
+			return Collections.emptyList();
+		}
 
 //		return Observable.fromIterable(e.getAnnotationMirrors())
 //				.filter(annotationMirror -> elements.getTypeElement(aClass.getName()).asType().equals(annotationMirror.getAnnotationType()))

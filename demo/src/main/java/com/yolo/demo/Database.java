@@ -1,19 +1,13 @@
 package com.yolo.demo;
 
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.experimental.Accessors;
+public interface Database {
 
-@Getter
-@Setter
-@Accessors(chain = true)
-public class Database {
+	Type type();
 
-	private final String value = "Database value";
-	private final User user;
-
-	public Database(User user) {
-		this.user = user;
+	enum Type {
+		ORACLE,
+		MONGODB
 	}
+
 }

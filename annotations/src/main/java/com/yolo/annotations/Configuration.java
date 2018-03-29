@@ -12,6 +12,5 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.SOURCE)
 public @interface Configuration {
 
-	Class<?>[] lazyBeans() default {};
 
 }
