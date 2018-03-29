@@ -3,6 +3,7 @@ package com.yolo.processor.graph;
 import com.google.auto.service.AutoService;
 import com.squareup.javapoet.FieldSpec;
 import com.squareup.javapoet.MethodSpec;
+import com.squareup.javapoet.TypeName;
 import com.squareup.javapoet.TypeSpec;
 import com.yolo.annotations.*;
 import com.yolo.processor.Annotations;
@@ -13,6 +14,8 @@ import com.yolo.processor.TypeNames;
 import javax.annotation.processing.Processor;
 import javax.annotation.processing.SupportedAnnotationTypes;
 import javax.lang.model.element.Modifier;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.StringJoiner;
 
 @AutoService(Processor.class)
@@ -42,30 +45,6 @@ public class ProcessorGraph extends ProcessorBase {
 				.returns(TypeNames.CLASS("Graph"));
 		graphClass.addMethod(graphGetInstanceFunction.build());
 
-		extractor.classes(LazyBean.class)
-				.forEach(tew -> {
-
-					// graph fields (lazy beans)
-					FieldSpec.Builder configurationField = FieldSpec.builder(tew.typeName(), lowerFirstLetter(tew.name()))
-							.addModifiers(Modifier.PRIVATE);
-					graphClass.addField(configurationField.build());
-
-					// lazy bean getter
-					MethodSpec.Builder graphBeanGetterFunction = MethodSpec.methodBuilder(lowerFirstLetter(tew.name()))
-							.addModifiers(Modifier.PUBLIC)
-							.addStatement("return this." + lowerFirstLetter(tew.name()))
-							.returns(tew.typeName());
-					graphClass.addMethod(graphBeanGetterFunction.build());
-
-					// lazy bean setter
-					MethodSpec.Builder graphBeanSetterFunction = MethodSpec.methodBuilder(lowerFirstLetter(tew.name()))
-							.addModifiers(Modifier.PUBLIC)
-							.addParameter(tew.typeName(), lowerFirstLetter(tew.name()))
-							.addStatement("this." + lowerFirstLetter(tew.name()) + "=" + lowerFirstLetter(tew.name()));
-					graphClass.addMethod(graphBeanSetterFunction.build());
-
-				});
-
 		extractor.classes(InjectMembers.class)
 				.forEach(tew -> {
 
@@ -91,7 +70,6 @@ public class ProcessorGraph extends ProcessorBase {
 
 		extractor.classes(Configuration.class)
 				.forEach(tew -> {
-
 
 					// graph fields (configurations)
 					FieldSpec.Builder configurationField = FieldSpec.builder(tew.typeName(), lowerFirstLetter(tew.name()))
@@ -160,9 +138,62 @@ public class ProcessorGraph extends ProcessorBase {
 
 				});
 
+		Map<TypeName, String> lazyBeans = new HashMap<>();
+
+		extractor.classes(LazyBean.class)
+				.forEach(tew -> {
+
+					TypeName typeName = tew.typeName();
+					String name = tew.name();
+
+					lazyBeans.put(typeName, name);
+
+				});
+
+		extractor.classes(EnableGraph.class)
+				.forEach(tew -> {
+
+					tew.annotationTypeMirrors(EnableGraph.class, "lazyBeans")
+							.forEach(typeMirror -> {
+
+								TypeName typeName = TypeNames.CLASS(typeMirror);
+								String name = types.asElement(typeMirror).getSimpleName().toString();
+
+								lazyBeans.put(typeName, name);
+
+							});
+
+				});
+
+
+		lazyBeans.forEach((typeName, name) -> {
+
+			// graph fields (lazy beans)
+			FieldSpec.Builder configurationField = FieldSpec.builder(typeName, lowerFirstLetter(name))
+					.addModifiers(Modifier.PRIVATE);
+			graphClass.addField(configurationField.build());
+
+			// lazy bean getter
+			MethodSpec.Builder graphBeanGetterFunction = MethodSpec.methodBuilder(lowerFirstLetter(name))
+					.addModifiers(Modifier.PUBLIC)
+					.addStatement("return this." + lowerFirstLetter(name))
+					.returns(typeName);
+			graphClass.addMethod(graphBeanGetterFunction.build());
+
+			// lazy bean setter
+			MethodSpec.Builder graphBeanSetterFunction = MethodSpec.methodBuilder(lowerFirstLetter(name))
+					.addModifiers(Modifier.PUBLIC)
+					.addParameter(typeName, lowerFirstLetter(name))
+					.addStatement("this." + lowerFirstLetter(name) + "=" + lowerFirstLetter(name));
+			graphClass.addMethod(graphBeanSetterFunction.build());
+
+		});
+
+
 		flush(packageName, graphClass.build());
 
 		return false;
 	}
+
 
 }

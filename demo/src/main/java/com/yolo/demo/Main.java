@@ -3,7 +3,7 @@ package com.yolo.demo;
 import com.yolo.annotations.EnableGraph;
 import com.yolo.generated.Graph;
 
-@EnableGraph
+@EnableGraph(lazyBeans = {User.class})
 public class Main {
 
 	public static void main(String[] args) {
@@ -18,7 +18,6 @@ public class Main {
 //				.getRepositoryMobiles()
 //				.getDatabase()
 //				.getValue());
-
 
 
 	}
