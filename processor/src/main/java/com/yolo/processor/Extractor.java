@@ -29,7 +29,7 @@ public class Extractor {
 
 	}
 
-	public List<TypeElementWrapper> classesAnnotatedWith(Class<? extends Annotation> a) {
+	public List<TypeElementWrapper> classes(Class<? extends Annotation> a) {
 		return roundEnvironment.getElementsAnnotatedWith(a)
 				.stream()
 				.filter(elem -> elem.getKind() == ElementKind.CLASS)
@@ -38,5 +38,6 @@ public class Extractor {
 				.sorted()
 				.collect(Collectors.toList());
 	}
+
 
 }

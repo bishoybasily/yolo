@@ -15,8 +15,6 @@ import javax.lang.model.util.Types;
 @Accessors(chain = true)
 public class VariableElementWrapper extends ElementWrapper<VariableElement> {
 
-	private ExecutableElementWrapper parent;
-
 	public VariableElementWrapper(VariableElement element, Filer filer, Types types, Elements elements, Messager messager) {
 		super(element, filer, types, elements, messager);
 	}

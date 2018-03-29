@@ -1,8 +1,9 @@
 /media/bishoy/Data/Work/Mine/android/yolo/annotations/src/main/java/com/yolo/annotations/EnableWorker.java
 /media/bishoy/Data/Work/Mine/android/yolo/annotations/src/main/java/com/yolo/annotations/Worker.java
+/media/bishoy/Data/Work/Mine/android/yolo/annotations/src/main/java/com/yolo/annotations/LazyBean.java
 /media/bishoy/Data/Work/Mine/android/yolo/annotations/src/main/java/com/yolo/annotations/Bean.java
 /media/bishoy/Data/Work/Mine/android/yolo/annotations/src/main/java/com/yolo/annotations/EnableGraph.java
-/media/bishoy/Data/Work/Mine/android/yolo/annotations/src/main/java/com/yolo/annotations/Component.java
 /media/bishoy/Data/Work/Mine/android/yolo/annotations/src/main/java/com/yolo/annotations/Job.java
 /media/bishoy/Data/Work/Mine/android/yolo/annotations/src/main/java/com/yolo/annotations/Configuration.java
+/media/bishoy/Data/Work/Mine/android/yolo/annotations/src/main/java/com/yolo/annotations/InjectMembers.java
 /media/bishoy/Data/Work/Mine/android/yolo/annotations/src/main/java/com/yolo/annotations/Autowired.java

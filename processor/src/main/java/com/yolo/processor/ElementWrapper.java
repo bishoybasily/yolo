@@ -14,7 +14,7 @@ import java.lang.annotation.Annotation;
 
 @Getter
 @EqualsAndHashCode(of = {"e"})
-public abstract class ElementWrapper<E extends Element> {
+public class ElementWrapper<E extends Element> {
 
 	protected E e;
 

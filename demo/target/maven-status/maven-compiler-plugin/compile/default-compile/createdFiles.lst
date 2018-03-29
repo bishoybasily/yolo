@@ -1,10 +1,14 @@
-com/yolo/processor/graph/Graph.class
+com/yolo/demo/Token.class
 com/yolo/demo/ServiceRegistration.class
+com/yolo/demo/InjectorScreen.class
 com/yolo/demo/Database.class
 com/yolo/demo/FeatureOne.class
+com/yolo/demo/User.class
+com/yolo/generated/Graph.class
+com/yolo/demo/RepositoryUsers.class
+com/yolo/demo/Screen.class
 com/yolo/demo/Main.class
 com/yolo/demo/ActivityOne.class
 com/yolo/demo/RepositoryMobiles.class
 com/yolo/demo/Application.class
-com/yolo/demo/RepositoryUsers.class
 com/yolo/demo/FeatureTwo.class

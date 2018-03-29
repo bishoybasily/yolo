@@ -15,8 +15,8 @@ public class Application {
 	}
 
 	@Bean
-	public Database database() {
-		return new Database();
+	public Database database(User user) {
+		return new Database(user);
 	}
 
 	@Bean

@@ -11,4 +11,9 @@ import lombok.experimental.Accessors;
 public class Database {
 
 	private final String value = "Database value";
+	private final User user;
+
+	public Database(User user) {
+		this.user = user;
+	}
 }

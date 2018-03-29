@@ -1,9 +1,9 @@
 /media/bishoy/Data/Work/Mine/android/yolo/processor/src/main/java/com/yolo/processor/ExecutableElementWrapper.java
 /media/bishoy/Data/Work/Mine/android/yolo/processor/src/main/java/com/yolo/processor/Extractor.java
+/media/bishoy/Data/Work/Mine/android/yolo/processor/src/main/java/com/yolo/processor/TypeNames.java
 /media/bishoy/Data/Work/Mine/android/yolo/processor/src/main/java/com/yolo/processor/Annotations.java
 /media/bishoy/Data/Work/Mine/android/yolo/processor/src/main/java/com/yolo/processor/ProcessorBase.java
 /media/bishoy/Data/Work/Mine/android/yolo/processor/src/main/java/com/yolo/processor/ElementWrapper.java
-/media/bishoy/Data/Work/Mine/android/yolo/processor/src/main/java/com/yolo/processor/ClassNames.java
 /media/bishoy/Data/Work/Mine/android/yolo/processor/src/main/java/com/yolo/processor/worker/ProcessorWorker.java
 /media/bishoy/Data/Work/Mine/android/yolo/processor/src/main/java/com/yolo/processor/VariableElementWrapper.java
 /media/bishoy/Data/Work/Mine/android/yolo/processor/src/main/java/com/yolo/processor/TypeElementWrapper.java

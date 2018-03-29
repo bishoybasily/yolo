@@ -1,5 +1,5 @@
-com/yolo/processor/ClassNames.class
 com/yolo/processor/VariableElementWrapper.class
+com/yolo/processor/TypeNames.class
 com/yolo/processor/ExecutableElementWrapper.class
 com/yolo/processor/Extractor.class
 com/yolo/processor/worker/ProcessorWorker.class

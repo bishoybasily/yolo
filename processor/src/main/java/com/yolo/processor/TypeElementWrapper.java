@@ -18,7 +18,8 @@ import java.util.stream.Collectors;
 public class TypeElementWrapper extends ElementWrapper<TypeElement> implements Comparable<TypeElementWrapper> {
 
 	protected ExecutableElementWrapper constructor;
-	protected List<VariableElementWrapper> dependencies;
+	protected List<VariableElementWrapper> constructorDependencies;
+	protected List<VariableElementWrapper> fields;
 	protected List<ExecutableElementWrapper> methods;
 
 	public TypeElementWrapper(TypeElement element, Filer filer, Types types, Elements elements, Messager messager) {
@@ -28,11 +29,11 @@ public class TypeElementWrapper extends ElementWrapper<TypeElement> implements C
 				.stream()
 				.filter(e -> e.getKind() == ElementKind.CONSTRUCTOR)
 				.map(ExecutableElement.class::cast)
-				.map(executableElement -> new ExecutableElementWrapper(executableElement, filer, types, elements, messager).setParent(this))
+				.map(executableElement -> new ExecutableElementWrapper(executableElement, filer, types, elements, messager))
 				.findFirst()
 				.get();
 
-		this.dependencies = element.getEnclosedElements()
+		this.constructorDependencies = element.getEnclosedElements()
 				.stream()
 				.filter(e -> e.getKind() == ElementKind.CONSTRUCTOR)
 				.map(ExecutableElement.class::cast)
@@ -42,20 +43,27 @@ public class TypeElementWrapper extends ElementWrapper<TypeElement> implements C
 				.stream()
 				.filter(e -> e.getKind() == ElementKind.PARAMETER)
 				.map(VariableElement.class::cast)
-				.map(variableElement -> new VariableElementWrapper(variableElement, filer, types, elements, messager).setParent(this.constructor))
+				.map(variableElement -> new VariableElementWrapper(variableElement, filer, types, elements, messager))
+				.collect(Collectors.toList());
+
+		this.fields = element.getEnclosedElements()
+				.stream()
+				.filter(e -> e.getKind() == ElementKind.FIELD)
+				.map(VariableElement.class::cast)
+				.map(variableElement -> new VariableElementWrapper(variableElement, filer, types, elements, messager))
 				.collect(Collectors.toList());
 
 		this.methods = element.getEnclosedElements()
 				.stream()
 				.filter(e -> e.getKind() == ElementKind.METHOD)
 				.map(ExecutableElement.class::cast)
-				.map(executableElement -> new ExecutableElementWrapper(executableElement, filer, types, elements, messager).setParent(this))
+				.map(executableElement -> new ExecutableElementWrapper(executableElement, filer, types, elements, messager))
 				.sorted()
 				.collect(Collectors.toList());
 
 	}
 
-	public final List<ExecutableElementWrapper> methodsAnnotatedWith(Class<? extends Annotation> a) {
+	public final List<ExecutableElementWrapper> methods(Class<? extends Annotation> a) {
 		return methods
 				.stream()
 				.filter(e -> e.annotatedWith(a))
@@ -63,8 +71,15 @@ public class TypeElementWrapper extends ElementWrapper<TypeElement> implements C
 				.collect(Collectors.toList());
 	}
 
+	public final List<VariableElementWrapper> fields(Class<? extends Annotation> a) {
+		return fields
+				.stream()
+				.filter(e -> e.annotatedWith(a))
+				.collect(Collectors.toList());
+	}
+
 	@Override
 	public int compareTo(TypeElementWrapper o) {
-		return dependencies.size() - o.dependencies.size();
+		return constructorDependencies.size() - o.constructorDependencies.size();
 	}
 }

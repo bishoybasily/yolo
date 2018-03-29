@@ -1,7 +1,8 @@
 com/yolo/annotations/Autowired.class
 com/yolo/annotations/Bean.class
-com/yolo/annotations/Component.class
+com/yolo/annotations/LazyBean.class
 com/yolo/annotations/Job.class
+com/yolo/annotations/InjectMembers.class
 com/yolo/annotations/EnableGraph.class
 com/yolo/annotations/Worker.class
 com/yolo/annotations/Configuration.class

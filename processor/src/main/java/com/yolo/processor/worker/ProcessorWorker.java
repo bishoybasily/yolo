@@ -7,9 +7,9 @@ import com.squareup.javapoet.TypeSpec;
 import com.yolo.annotations.Job;
 import com.yolo.annotations.Worker;
 import com.yolo.processor.Annotations;
-import com.yolo.processor.ClassNames;
 import com.yolo.processor.Extractor;
 import com.yolo.processor.ProcessorBase;
+import com.yolo.processor.TypeNames;
 
 import javax.annotation.processing.Processor;
 import javax.annotation.processing.SupportedAnnotationTypes;
@@ -25,13 +25,13 @@ public class ProcessorWorker extends ProcessorBase {
 	@Override
 	public boolean process(Extractor extractor) {
 
-		extractor.classesAnnotatedWith(Worker.class)
+		extractor.classes(Worker.class)
 				.forEach(tew -> {
 
 					String elementClassName = "Worker" + tew.name();
 					TypeSpec.Builder elementWorkerClass = TypeSpec.classBuilder(elementClassName)
 							.addModifiers(Modifier.PUBLIC)
-							.superclass(ClassNames.INTENT_SERVICE_CLASS);
+							.superclass(TypeNames.INTENT_SERVICE_CLASS);
 
 					MethodSpec.Builder elementHandlerConstructor = MethodSpec.constructorBuilder()
 							.addModifiers(Modifier.PUBLIC)
@@ -40,18 +40,18 @@ public class ProcessorWorker extends ProcessorBase {
 
 					Set<String> actions = new HashSet<>();
 
-					tew.methodsAnnotatedWith(Job.class)
+					tew.methods(Job.class)
 							.forEach(eew -> {
 
 								MethodSpec.Builder elementJobFunction = MethodSpec.methodBuilder(eew.name())
 										.addModifiers(Modifier.PUBLIC)
-										.addParameter(ClassNames.INTENT_CLASS, "intent");
+										.addParameter(TypeNames.INTENT_CLASS, "intent");
 								elementWorkerClass.addMethod(elementJobFunction.build());
 
 								MethodSpec.Builder elementExecuteJobFunction = MethodSpec.methodBuilder("execute" + upperFirstLetter(eew.name()) + "Job")
 										.addModifiers(Modifier.PUBLIC, Modifier.STATIC)
-										.addParameter(ClassNames.CONTEXT_CLASS, "context")
-										.addParameter(ClassNames.INTENT_CLASS, "intent")
+										.addParameter(TypeNames.CONTEXT_CLASS, "context")
+										.addParameter(TypeNames.INTENT_CLASS, "intent")
 										.addStatement("context.startService(intent.setClass(context, " + tew.packageReference() + "." + tew.name() + ".class).setAction(\"" + eew.name() + "\"))");
 								elementWorkerClass.addMethod(elementExecuteJobFunction.build());
 
@@ -62,7 +62,7 @@ public class ProcessorWorker extends ProcessorBase {
 					MethodSpec.Builder workerOnHandleIntentFunction = MethodSpec.methodBuilder("onHandleIntent")
 							.addAnnotation(Override.class)
 							.addModifiers(Modifier.PUBLIC, Modifier.FINAL)
-							.addParameter(ClassNames.INTENT_CLASS, "intent");
+							.addParameter(TypeNames.INTENT_CLASS, "intent");
 
 					CodeBlock.Builder elementSwitchBlock = CodeBlock.builder();
 					elementSwitchBlock.add("switch (intent.getAction()){");

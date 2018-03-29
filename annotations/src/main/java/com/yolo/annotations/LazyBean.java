@@ -9,9 +9,6 @@ import java.lang.annotation.Target;
  * Created by bishoy on 7/18/17.
  */
 @Target(ElementType.TYPE)
-@Retention(RetentionPolicy.RUNTIME)
-public @interface EnableGraph {
-
-	Class<?>[] lazyBeans() default {};
-
+@Retention(RetentionPolicy.SOURCE)
+public @interface LazyBean {
 }

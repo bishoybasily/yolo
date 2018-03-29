@@ -22,7 +22,6 @@ import java.util.stream.Collectors;
 public class ExecutableElementWrapper extends ElementWrapper<ExecutableElement> implements Comparable<ExecutableElementWrapper> {
 
 	protected List<VariableElementWrapper> params;
-	private TypeElementWrapper parent;
 
 	public ExecutableElementWrapper(ExecutableElement element, Filer filer, Types types, Elements elements, Messager messager) {
 		super(element, filer, types, elements, messager);
@@ -31,7 +30,7 @@ public class ExecutableElementWrapper extends ElementWrapper<ExecutableElement> 
 				.stream()
 				.filter(e -> e.getKind() == ElementKind.PARAMETER)
 				.map(VariableElement.class::cast)
-				.map(variableElement -> new VariableElementWrapper(variableElement, filer, types, elements, messager).setParent(this))
+				.map(variableElement -> new VariableElementWrapper(variableElement, filer, types, elements, messager))
 				.collect(Collectors.toList());
 	}
 
