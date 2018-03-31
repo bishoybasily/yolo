@@ -2,27 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8eeb9ad4-19a7-4b86-8fae-e673b56e7ab4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/annotations/src/main/java/com/yolo/annotations/Qualifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/MongoDb.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/annotations/src/main/java/com/yolo/annotations/Autowired.java" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/src/main/java/com/yolo/annotations/Autowired.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/annotations/src/main/java/com/yolo/annotations/Bean.java" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/src/main/java/com/yolo/annotations/Bean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/annotations/target/annotations-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/target/annotations-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/annotations/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/annotations/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/annotations/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/FeatureOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/FeatureOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/Oracle.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/Oracle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/RepositoryMobiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/RepositoryMobiles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/Screen.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/Screen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/target/demo-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/demo-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/ElementWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/ElementWrapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/graph/ProcessorGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/graph/ProcessorGraph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/processor/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/processor/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/processor/target/processor-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/processor/target/processor-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sample/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sample/target/maven-archiver/pom.properties" afterDir="false" />
@@ -56,22 +41,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProcessorGraph.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProcessorGraph.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/graph/ProcessorGraph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="149" column="57" selection-start-line="149" selection-start-column="57" selection-end-line="149" selection-end-column="57" />
+            <state relative-caret-position="110">
+              <caret line="135" selection-start-line="135" selection-end-line="135" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="86" selection-start-line="12" selection-start-column="86" selection-end-line="12" selection-end-column="86" />
+            <state relative-caret-position="285">
+              <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Graph.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo/target/generated-sources/annotations/com/yolo/generated/Graph.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-595">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ElementWrapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/ElementWrapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="74" column="25" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+              <folding>
+                <element signature="e#446#447#0" expanded="true" />
+                <element signature="e#476#477#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -80,8 +96,8 @@
       <file leaf-file-name="ServiceRegistration.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/ServiceRegistration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+            <state relative-caret-position="135">
+              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -92,7 +108,7 @@
             <state relative-caret-position="165">
               <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
               <folding>
-                <element signature="e#347#348#0" expanded="true" />
+                <element signature="e#287#288#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,7 +118,7 @@
         <entry file="file://$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/RepositoryUsers.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#251#252#0" expanded="true" />
                 <element signature="e#282#283#0" expanded="true" />
@@ -181,15 +197,15 @@
         <option value="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/MongoDb.java" />
         <option value="$PROJECT_DIR$/annotations/src/main/java/com/yolo/annotations/Autowired.java" />
         <option value="$PROJECT_DIR$/annotations/src/main/java/com/yolo/annotations/Bean.java" />
-        <option value="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/Application.java" />
         <option value="$PROJECT_DIR$/annotations/src/main/java/com/yolo/annotations/Qualifier.java" />
-        <option value="$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/ElementWrapper.java" />
         <option value="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/FeatureOne.java" />
-        <option value="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/Main.java" />
         <option value="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/Screen.java" />
         <option value="$PROJECT_DIR$/demo/target/generated-sources/annotations/com/yolo/generated/Graph.java" />
         <option value="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/RepositoryMobiles.java" />
+        <option value="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/Application.java" />
         <option value="$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/graph/ProcessorGraph.java" />
+        <option value="$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/ElementWrapper.java" />
+        <option value="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/Main.java" />
       </list>
     </option>
   </component>
@@ -223,10 +239,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="48" />
-    <option name="y" value="-11" />
-    <option name="width" value="1873" />
-    <option name="height" value="1092" />
+    <option name="x" value="1662" />
+    <option name="y" value="-6" />
+    <option name="width" value="1869" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -234,6 +250,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -266,15 +283,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yolo" type="462c0819:PsiDirectoryNode" />
-              <item name="annotations" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="annotations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="parent" type="b2602c69:ProjectViewProjectNode" />
@@ -405,13 +413,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="App&#9;FILE&#9;file:///media/bishoy/Data/Work/Mine/android/yolo/demo/src/main/java/com/yolo/demo/Application.java&#10;Grap&#9;FILE&#9;file:///media/bishoy/Data/Work/Mine/android/yolo/demo/target/generated-sources/annotations/com/yolo/generated/Graph.java&#10;Scre&#9;FILE&#9;file:///media/bishoy/Data/Work/Mine/android/yolo/demo/src/main/java/com/yolo/demo/Screen.java&#10;TypEl&#9;FILE&#9;file:///media/bishoy/Data/Work/Mine/android/yolo/processor/src/main/java/com/yolo/processor/TypeElementWrapper.java&#10;Proc&#9;FILE&#9;file:///media/bishoy/Data/Work/Mine/android/yolo/processor/src/main/java/com/yolo/processor/graph/ProcessorGraph.java&#10;Enab&#9;FILE&#9;file:///media/bishoy/Data/Work/Mine/android/yolo/annotations/src/main/java/com/yolo/annotations/EnableGraph.java&#10;Main&#9;FILE&#9;file:///media/bishoy/Data/Work/Mine/android/yolo/demo/src/main/java/com/yolo/demo/Main.java&#10;Ty&#9;FILE&#9;file:///media/bishoy/Data/Work/Mine/android/yolo/processor/src/main/java/com/yolo/processor/TypeElementWrapper.java&#10;Ac&#9;FILE&#9;file:///media/bishoy/Data/Work/Mine/android/yolo/demo/src/main/java/com/yolo/demo/ActivityOne.java&#10;CompPro&#9;FILE&#9;jar:///home/bishoy/.m2/repository/com/google/dagger/dagger-compiler/2.11/dagger-compiler-2.11-sources.jar!/dagger/internal/codegen/ComponentProcessor.java&#10;Pro&#9;FILE&#9;file:///media/bishoy/Data/Work/Mine/android/yolo/processor/src/main/java/com/yolo/processor/graph/ProcessorGraph.java&#10;TypeNa&#9;PSI&#9;JAVA://com.yolo.processor.TypeNames&#10;User&#9;FILE&#9;file:///media/bishoy/Data/Work/Mine/android/yolo/demo/src/main/java/com/yolo/demo/User.java&#10;ComponentProcessor&#9;PSI&#9;JAVA://dagger.internal.codegen.ComponentProcessor&#10;CompM&#9;FILE&#9;file:///media/bishoy/Data/Work/Mine/android/yolo/sample/src/main/java/com/yolo/sample/ComponentMain.java&#10;Work&#9;FILE&#9;file:///media/bishoy/Data/Work/Mine/android/yolo/processor/src/main/java/com/yolo/processor/worker/ProcessorWorker.java&#10;TypeE&#9;FILE&#9;file:///media/bishoy/Data/Work/Mine/android/yolo/processor/src/main/java/com/yolo/processor/TypeElementWrapper.java&#10;Pr&#9;FILE&#9;file:///media/bishoy/Data/Work/Mine/android/yolo/processor/src/main/java/com/yolo/processor/graph/ProcessorGraph.java&#10;ElemW&#9;PSI&#9;JAVA://com.yolo.processor.graph.ElementWrapper" />
+    <property name="SearchEverywhereHistoryKey" value="Ele&#9;FILE&#9;file:///media/bishoy/Data/Work/Mine/android/yolo/processor/src/main/java/com/yolo/processor/ElementWrapper.java&#10;App&#9;FILE&#9;file:///media/bishoy/Data/Work/Mine/android/yolo/demo/src/main/java/com/yolo/demo/Application.java&#10;Grap&#9;FILE&#9;file:///media/bishoy/Data/Work/Mine/android/yolo/demo/target/generated-sources/annotations/com/yolo/generated/Graph.java&#10;Scre&#9;FILE&#9;file:///media/bishoy/Data/Work/Mine/android/yolo/demo/src/main/java/com/yolo/demo/Screen.java&#10;TypEl&#9;FILE&#9;file:///media/bishoy/Data/Work/Mine/android/yolo/processor/src/main/java/com/yolo/processor/TypeElementWrapper.java&#10;Proc&#9;FILE&#9;file:///media/bishoy/Data/Work/Mine/android/yolo/processor/src/main/java/com/yolo/processor/graph/ProcessorGraph.java&#10;Enab&#9;FILE&#9;file:///media/bishoy/Data/Work/Mine/android/yolo/annotations/src/main/java/com/yolo/annotations/EnableGraph.java&#10;Main&#9;FILE&#9;file:///media/bishoy/Data/Work/Mine/android/yolo/demo/src/main/java/com/yolo/demo/Main.java&#10;Ty&#9;FILE&#9;file:///media/bishoy/Data/Work/Mine/android/yolo/processor/src/main/java/com/yolo/processor/TypeElementWrapper.java&#10;Ac&#9;FILE&#9;file:///media/bishoy/Data/Work/Mine/android/yolo/demo/src/main/java/com/yolo/demo/ActivityOne.java&#10;CompPro&#9;FILE&#9;jar:///home/bishoy/.m2/repository/com/google/dagger/dagger-compiler/2.11/dagger-compiler-2.11-sources.jar!/dagger/internal/codegen/ComponentProcessor.java&#10;Pro&#9;FILE&#9;file:///media/bishoy/Data/Work/Mine/android/yolo/processor/src/main/java/com/yolo/processor/graph/ProcessorGraph.java&#10;TypeNa&#9;PSI&#9;JAVA://com.yolo.processor.TypeNames&#10;User&#9;FILE&#9;file:///media/bishoy/Data/Work/Mine/android/yolo/demo/src/main/java/com/yolo/demo/User.java&#10;ComponentProcessor&#9;PSI&#9;JAVA://dagger.internal.codegen.ComponentProcessor&#10;CompM&#9;FILE&#9;file:///media/bishoy/Data/Work/Mine/android/yolo/sample/src/main/java/com/yolo/sample/ComponentMain.java&#10;Work&#9;FILE&#9;file:///media/bishoy/Data/Work/Mine/android/yolo/processor/src/main/java/com/yolo/processor/worker/ProcessorWorker.java&#10;TypeE&#9;FILE&#9;file:///media/bishoy/Data/Work/Mine/android/yolo/processor/src/main/java/com/yolo/processor/TypeElementWrapper.java&#10;Pr&#9;FILE&#9;file:///media/bishoy/Data/Work/Mine/android/yolo/processor/src/main/java/com/yolo/processor/graph/ProcessorGraph.java&#10;ElemW&#9;PSI&#9;JAVA://com.yolo.processor.graph.ElementWrapper" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
@@ -552,7 +559,10 @@
       <workItem from="1522258201471" duration="3167000" />
       <workItem from="1522268589105" duration="9297000" />
       <workItem from="1522311533565" duration="17846000" />
-      <workItem from="1522345225600" duration="7383000" />
+      <workItem from="1522345225600" duration="9276000" />
+      <workItem from="1522401317700" duration="358000" />
+      <workItem from="1522401690869" duration="1405000" />
+      <workItem from="1522486969400" duration="1253000" />
     </task>
     <task id="LOCAL-00001" summary="graph basic impl.">
       <created>1522190725811</created>
@@ -603,43 +613,49 @@
       <option name="project" value="LOCAL" />
       <updated>1522350473615</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="qualifier works">
+      <created>1522355410118</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1522355410118</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65359000" />
+    <option name="totallyTimeSpent" value="70268000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="-6" width="1871" height="1086" extended-state="6" />
-    <editor active="true" />
+    <frame x="1920" y="-6" width="1920" height="1086" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.32586113" side_tool="true" visible="true" weight="0.5811966" />
-      <window_info anchor="right" id="Maven Projects" order="3" sideWeight="0.49795082" visible="true" weight="0.13340624" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32968834" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.4855112" weight="0.3482906" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.32747602" side_tool="true" visible="true" weight="0.35470086" />
+      <window_info active="true" anchor="right" id="Maven Projects" order="3" sideWeight="0.49795082" visible="true" weight="0.23642172" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.672524" visible="true" weight="0.35470086" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.82449424" weight="0.21901709" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.67413884" visible="true" weight="0.5811966" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.84527063" weight="0.30235043" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.100054674" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49535266" weight="0.13782051" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.8436304" weight="0.19551282" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18423855" />
+      <window_info anchor="right" id="Database" order="3" weight="0.24931657" />
       <window_info id="Learn" order="2" />
       <window_info anchor="right" id="SciView" order="4" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.4855112" weight="0.3482906" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49535266" weight="0.13782051" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" x="0" y="0" width="418" height="892" id="Documentation" order="5" sideWeight="0.5020492" side_tool="true" weight="0.1410607" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -688,7 +704,8 @@
     <MESSAGE value="cleaner recursive graph" />
     <MESSAGE value="basic di works" />
     <MESSAGE value="lazy beans done" />
-    <option name="LAST_COMMIT_MESSAGE" value="lazy beans done" />
+    <MESSAGE value="qualifier works" />
+    <option name="LAST_COMMIT_MESSAGE" value="qualifier works" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -753,9 +770,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="57" column="56" lean-forward="true" selection-start-line="57" selection-start-column="56" selection-end-line="57" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -785,9 +799,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1254">
           <caret line="60" column="59" selection-start-line="60" selection-start-column="59" selection-end-line="60" selection-end-column="59" />
-          <folding>
-            <element signature="docComment;class#ComponentProcessor#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -864,12 +875,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-          <folding>
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#730#731#0" expanded="true" />
-            <element signature="e#769#770#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -912,9 +917,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
           <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -943,11 +945,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
-          <folding>
-            <element signature="method#TypeElementWrapper#0;class#TypeElementWrapper#0" />
-            <element signature="method#fields#0;class#TypeElementWrapper#0" />
-            <element signature="method#compareTo#0;class#TypeElementWrapper#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -982,16 +979,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/ElementWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="67" column="24" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
-          <folding>
-            <element signature="method#ElementWrapper#0;class#ElementWrapper#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/FeatureOne.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1019,66 +1006,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-          <folding>
-            <element signature="e#390#391#0" expanded="true" />
-            <element signature="e#422#423#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-            <element signature="e#502#503#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/target/generated-sources/annotations/com/yolo/demo/InjectorScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/target/generated-sources/annotations/com/yolo/demo/InjectorScreen.java" />
     <entry file="file://$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/Screen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/target/generated-sources/annotations/com/yolo/generated/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="74" column="112" lean-forward="true" selection-start-line="74" selection-start-column="112" selection-end-line="74" selection-end-column="112" />
-          <folding>
-            <element signature="method#Graph#0;class#Graph#0" />
-            <element signature="method#getInstance#0;class#Graph#0" />
-            <element signature="method#featureTwo#0;class#Graph#0" />
-            <element signature="method#featureOne#0;class#Graph#0" />
-            <element signature="method#activityOne#0;class#Graph#0" />
-            <element signature="method#application#0;class#Graph#0" />
-            <element signature="method#oracle#0;class#Graph#0" />
-            <element signature="method#mongoDb#0;class#Graph#0" />
-            <element signature="method#repositoryUsers#0;class#Graph#0" />
-            <element signature="method#serviceRegistration#0;class#Graph#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/ServiceRegistration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="86" selection-start-line="12" selection-start-column="86" selection-end-line="12" selection-end-column="86" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1090,7 +1022,7 @@
         <state relative-caret-position="165">
           <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
           <folding>
-            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1098,7 +1030,7 @@
     <entry file="file://$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/RepositoryUsers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#251#252#0" expanded="true" />
             <element signature="e#282#283#0" expanded="true" />
@@ -1106,10 +1038,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/ServiceRegistration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+          <folding>
+            <element signature="e#446#447#0" expanded="true" />
+            <element signature="e#476#477#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/graph/ProcessorGraph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="149" column="57" selection-start-line="149" selection-start-column="57" selection-end-line="149" selection-end-column="57" />
+        <state relative-caret-position="110">
+          <caret line="135" selection-start-line="135" selection-end-line="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/ElementWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="74" column="25" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/target/generated-sources/annotations/com/yolo/generated/Graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-595">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="29" lean-forward="true" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

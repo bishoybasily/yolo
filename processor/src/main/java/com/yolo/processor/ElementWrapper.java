@@ -50,10 +50,11 @@ public class ElementWrapper<E extends Element> {
 
 	public final List<TypeMirror> annotationTypeMirrors(Class<? extends Annotation> aClass, String key) {
 
-		Optional<Object> value = getAnnotationValues(aClass, key);
+		Optional<AnnotationValue> value = getAnnotationValues(aClass, key);
 
 		if (value.isPresent())
 			return value
+					.map(AnnotationValue::getValue)
 					.map(o -> (List<AnnotationValue>) o)
 					.get()
 					.stream()
@@ -67,10 +68,11 @@ public class ElementWrapper<E extends Element> {
 
 	public final String annotationString(Class<? extends Annotation> aClass, String key) {
 
-		Optional<Object> value = getAnnotationValues(aClass, key);
+		Optional<AnnotationValue> value = getAnnotationValues(aClass, key);
 
 		if (value.isPresent())
 			return value
+					.map(AnnotationValue::getValue)
 					.map(o -> (String) o)
 					.get();
 		else return null;
@@ -81,7 +83,7 @@ public class ElementWrapper<E extends Element> {
 		return elements.getPackageOf(e).getQualifiedName().toString();
 	}
 
-	private Optional<Object> getAnnotationValues(Class<? extends Annotation> aClass, String key) {
+	private Optional<AnnotationValue> getAnnotationValues(Class<? extends Annotation> aClass, String key) {
 		return e.getAnnotationMirrors()
 				.stream()
 				.filter(annotationMirror -> elements.getTypeElement(aClass.getName()).asType().equals(annotationMirror.getAnnotationType()))
@@ -90,7 +92,7 @@ public class ElementWrapper<E extends Element> {
 				.map(Map::entrySet)
 				.map(Collection::stream)
 				.map(o -> o.collect(Collectors.toMap(e -> e.getKey().getSimpleName().toString(), Map.Entry::getValue)))
-				.map(o -> o.get(key).getValue());
+				.map(o -> o.get(key));
 	}
 
 }
