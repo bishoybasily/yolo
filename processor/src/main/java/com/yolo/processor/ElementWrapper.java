@@ -48,9 +48,22 @@ public class ElementWrapper<E extends Element> {
 		return e.getAnnotation(a) != null;
 	}
 
+	public final String annotationString(Class<? extends Annotation> aClass, String key) {
+
+		Optional<AnnotationValue> value = getAnnotationValue(aClass, key);
+
+		if (value.isPresent())
+			return value
+					.map(AnnotationValue::getValue)
+					.map(o -> (String) o)
+					.get();
+		else return null;
+
+	}
+
 	public final List<TypeMirror> annotationTypeMirrors(Class<? extends Annotation> aClass, String key) {
 
-		Optional<AnnotationValue> value = getAnnotationValues(aClass, key);
+		Optional<AnnotationValue> value = getAnnotationValue(aClass, key);
 
 		if (value.isPresent())
 			return value
@@ -65,25 +78,11 @@ public class ElementWrapper<E extends Element> {
 
 	}
 
-
-	public final String annotationString(Class<? extends Annotation> aClass, String key) {
-
-		Optional<AnnotationValue> value = getAnnotationValues(aClass, key);
-
-		if (value.isPresent())
-			return value
-					.map(AnnotationValue::getValue)
-					.map(o -> (String) o)
-					.get();
-		else return null;
-
-	}
-
 	public final String packageReference() {
 		return elements.getPackageOf(e).getQualifiedName().toString();
 	}
 
-	private Optional<AnnotationValue> getAnnotationValues(Class<? extends Annotation> aClass, String key) {
+	private Optional<AnnotationValue> getAnnotationValue(Class<? extends Annotation> aClass, String key) {
 		return e.getAnnotationMirrors()
 				.stream()
 				.filter(annotationMirror -> elements.getTypeElement(aClass.getName()).asType().equals(annotationMirror.getAnnotationType()))

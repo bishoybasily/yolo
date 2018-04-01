@@ -23,7 +23,7 @@ import java.util.StringJoiner;
 @SupportedAnnotationTypes(Annotations.ENABLE_GRAPH)
 public class ProcessorGraph extends ProcessorBase {
 
-	private final String packageName = "com.yolo.generated";
+	private static final String PACKAGE_NAME = "com.yolo.generated";
 
 	@Override
 	public boolean process(Extractor extractor) {
@@ -45,150 +45,196 @@ public class ProcessorGraph extends ProcessorBase {
 				.returns(TypeNames.CLASS("Graph"));
 		graphClass.addMethod(graphGetInstanceFunction.build());
 
-		extractor.classes(InjectMembers.class)
-				.forEach(tew -> {
+		extractor.classes(InjectMembers.class).forEach(tew -> {
 
-					// injector class
-					TypeSpec.Builder injectorClass = TypeSpec.classBuilder("Injector" + tew.name())
-							.addModifiers(Modifier.PUBLIC);
+			// injector class
+			TypeSpec.Builder injectorClass = TypeSpec.classBuilder("Injector" + tew.name())
+					.addModifiers(Modifier.PUBLIC);
 
-					// inject function
-					MethodSpec.Builder injectFunction = MethodSpec.methodBuilder("inject")
-							.addModifiers(Modifier.PUBLIC, Modifier.STATIC)
-							.addParameter(tew.typeName(), lowerFirstLetter(tew.name()));
+			// inject function
+			MethodSpec.Builder injectFunction = MethodSpec.methodBuilder("inject")
+					.addModifiers(Modifier.PUBLIC, Modifier.STATIC)
+					.addParameter(tew.typeName(), lowerFirstLetter(tew.name()));
 
-					tew.fields(Autowired.class)
-							.forEach(vew -> {
+			tew.fields(Autowired.class).forEach(vew -> {
 
-								// respect qualifier
-								String dependencyName = lowerFirstLetter(vew.name());
-								String dependencyQualifierName = vew.annotationString(Qualifier.class, "value");
-								if (dependencyQualifierName != null)
-									dependencyName = dependencyQualifierName;
+				// respect qualifier
+				String dependencyName = lowerFirstLetter(vew.name());
+				String dependencyQualifierName = vew.annotationString(Qualifier.class, "value");
+				if (dependencyQualifierName != null)
+					dependencyName = dependencyQualifierName;
 
-								injectFunction.addStatement("" + lowerFirstLetter(tew.name()) + "." + lowerFirstLetter(vew.name()) + " = " + packageName + ".Graph.getInstance()." + dependencyName + "()");
+				injectFunction.addStatement("" + lowerFirstLetter(tew.name()) + "." + lowerFirstLetter(vew.name()) + " = " + PACKAGE_NAME + ".Graph.getInstance()." + dependencyName + "()");
 
-							});
+			});
 
-					injectorClass.addMethod(injectFunction.build());
+			injectorClass.addMethod(injectFunction.build());
 
-					flush(tew.packageReference(), injectorClass.build());
+			flush(tew.packageReference(), injectorClass.build());
 
-				});
+		});
 
-		extractor.classes(Configuration.class)
-				.forEach(tew -> {
+		extractor.classes(Configuration.class).forEach(tew -> {
 
-					// graph fields (configurations)
-					FieldSpec.Builder configurationField = FieldSpec.builder(tew.typeName(), lowerFirstLetter(tew.name()))
-							.addModifiers(Modifier.PRIVATE);
-					graphClass.addField(configurationField.build());
+			// graph fields (configurations)
+			FieldSpec.Builder configurationField = FieldSpec.builder(tew.typeName(), lowerFirstLetter(tew.name()))
+					.addModifiers(Modifier.PRIVATE);
+			graphClass.addField(configurationField.build());
 
-					if (tew.getConstructorDependencies().isEmpty()) {
+			String configurationScope = tew.annotationString(Scope.class, "value");
+			boolean singletonConfiguration = configurationScope == null || configurationScope.equalsIgnoreCase("singleton");
 
-						MethodSpec.Builder graphBeanProviderFunction = MethodSpec.methodBuilder(lowerFirstLetter(tew.name()))
+			if (tew.getConstructorDependencies().isEmpty()) {
+
+				if (singletonConfiguration) {
+
+					MethodSpec.Builder graphBeanProviderFunction = MethodSpec.methodBuilder(lowerFirstLetter(tew.name()))
+							.addModifiers(Modifier.PUBLIC)
+							.addStatement("if ( this." + lowerFirstLetter(tew.name()) + " == null ) this." + lowerFirstLetter(tew.name()) + " = new " + tew.name() + "()")
+							.addStatement("return this." + lowerFirstLetter(tew.name()))
+							.returns(tew.typeName());
+					graphClass.addMethod(graphBeanProviderFunction.build());
+
+				} else {
+
+					MethodSpec.Builder graphBeanProviderFunction = MethodSpec.methodBuilder(lowerFirstLetter(tew.name()))
+							.addModifiers(Modifier.PUBLIC)
+							.addStatement("return new " + tew.name() + "()")
+							.returns(tew.typeName());
+					graphClass.addMethod(graphBeanProviderFunction.build());
+
+				}
+
+			} else {
+
+				StringJoiner stringJoiner = new StringJoiner(",");
+				tew.getConstructorDependencies().forEach(vew -> stringJoiner.add(vew.name() + "()"));
+				String commaSeparatedParams = stringJoiner.toString();
+
+				if (singletonConfiguration) {
+
+					MethodSpec.Builder graphBeanProviderFunction = MethodSpec.methodBuilder(lowerFirstLetter(tew.name()))
+							.addModifiers(Modifier.PUBLIC)
+							.addStatement("if ( this." + lowerFirstLetter(tew.name()) + " == null ) this." + lowerFirstLetter(tew.name()) + " = new " + tew.name() + "(" + commaSeparatedParams + ")")
+							.addStatement("return this." + lowerFirstLetter(tew.name()))
+							.returns(tew.typeName());
+					graphClass.addMethod(graphBeanProviderFunction.build());
+
+				} else {
+
+					MethodSpec.Builder graphBeanProviderFunction = MethodSpec.methodBuilder(lowerFirstLetter(tew.name()))
+							.addModifiers(Modifier.PUBLIC)
+							.addStatement("return new " + tew.name() + "(" + commaSeparatedParams + ")")
+							.returns(tew.typeName());
+					graphClass.addMethod(graphBeanProviderFunction.build());
+
+				}
+
+			}
+
+			// add beans functions
+			tew.methods(Bean.class).forEach(eew -> {
+
+				// respect qualifier
+				String beanName = lowerFirstLetter(eew.name());
+				String beanQualifierName = eew.annotationString(Qualifier.class, "value");
+				if (beanQualifierName != null)
+					beanName = beanQualifierName;
+
+				// graph fields (constructorDependencies)
+				FieldSpec.Builder dependencyField = FieldSpec.builder(eew.returnTypeName(), beanName)
+						.addModifiers(Modifier.PRIVATE);
+				graphClass.addField(dependencyField.build());
+
+				String beanScope = eew.annotationString(Scope.class, "value");
+				boolean singletonBean = beanScope == null || beanScope.equalsIgnoreCase("singleton");
+
+				if (eew.getParams().isEmpty()) {
+
+					if (singletonBean) {
+
+						MethodSpec.Builder graphBeanProviderFunction = MethodSpec.methodBuilder(beanName)
 								.addModifiers(Modifier.PUBLIC)
-								.addStatement("if ( this." + lowerFirstLetter(tew.name()) + " == null ) this." + lowerFirstLetter(tew.name()) + " = new " + tew.name() + "()")
-								.addStatement("return this." + lowerFirstLetter(tew.name()))
-								.returns(tew.typeName());
+								.returns(eew.returnTypeName())
+								.addStatement("if ( this." + beanName + " == null ) this." + beanName + " = " + lowerFirstLetter(tew.name()) + "()." + eew.name() + "()")
+								.addStatement("return this." + beanName);
 						graphClass.addMethod(graphBeanProviderFunction.build());
 
 					} else {
 
-						StringJoiner stringJoiner = new StringJoiner(",");
-						tew.getConstructorDependencies().forEach(vew -> stringJoiner.add(vew.name() + "()"));
-						String commaSeparatedParams = stringJoiner.toString();
-
-						MethodSpec.Builder graphBeanProviderFunction = MethodSpec.methodBuilder(lowerFirstLetter(tew.name()))
+						MethodSpec.Builder graphBeanProviderFunction = MethodSpec.methodBuilder(beanName)
 								.addModifiers(Modifier.PUBLIC)
-								.addStatement("if ( this." + lowerFirstLetter(tew.name()) + " == null ) this." + lowerFirstLetter(tew.name()) + " = new " + tew.name() + "(" + commaSeparatedParams + ")")
-								.addStatement("return this." + lowerFirstLetter(tew.name()))
-								.returns(tew.typeName());
+								.addStatement("return new " + upperFirstLetter(eew.name()) + "()")
+								.returns(eew.returnTypeName());
 						graphClass.addMethod(graphBeanProviderFunction.build());
 
 					}
 
-					// add beans functions
-					tew.methods(Bean.class)
-							.forEach(eew -> {
+				} else {
 
-								// respect qualifier
-								String beanName = lowerFirstLetter(eew.name());
-								String beanQualifierName = eew.annotationString(Qualifier.class, "value");
-								if (beanQualifierName != null)
-									beanName = beanQualifierName;
+					StringJoiner stringJoiner = new StringJoiner(",");
+					eew.getParams().forEach(vew -> {
 
-								// graph fields (constructorDependencies)
-								FieldSpec.Builder dependencyField = FieldSpec.builder(eew.returnTypeName(), beanName)
-										.addModifiers(Modifier.PRIVATE);
-								graphClass.addField(dependencyField.build());
+						// respect qualifier
+						String parameterName = vew.name();
+						String parameterQualifierName = vew.annotationString(Qualifier.class, "value");
+						if (parameterQualifierName != null)
+							parameterName = parameterQualifierName;
 
-								if (eew.getParams().isEmpty()) {
+						stringJoiner.add(parameterName + "()");
 
-									MethodSpec.Builder graphBeanProviderFunction = MethodSpec.methodBuilder(beanName)
-											.addModifiers(Modifier.PUBLIC)
-											.returns(eew.returnTypeName())
-											.addStatement("if ( this." + beanName + " == null ) this." + beanName + " = " + lowerFirstLetter(tew.name()) + "()." + eew.name() + "()")
-											.addStatement("return this." + beanName);
-									graphClass.addMethod(graphBeanProviderFunction.build());
+					});
 
-								} else {
+					String commaSeparatedParams = stringJoiner.toString();
 
-									StringJoiner stringJoiner = new StringJoiner(",");
-									eew.getParams().forEach(vew -> {
+					if (singletonBean) {
 
-										// respect qualifier
-										String parameterName = vew.name();
-										String parameterQualifierName = vew.annotationString(Qualifier.class, "value");
-										if (parameterQualifierName != null)
-											parameterName = parameterQualifierName;
+						MethodSpec.Builder graphBeanProviderFunction = MethodSpec.methodBuilder(beanName)
+								.addModifiers(Modifier.PUBLIC)
+								.addStatement("if ( this." + beanName + " == null ) this." + beanName + " = " + lowerFirstLetter(tew.name()) + "()." + eew.name() + "(" + commaSeparatedParams + ")")
+								.addStatement("return this." + beanName)
+								.returns(eew.returnTypeName());
+						graphClass.addMethod(graphBeanProviderFunction.build());
 
-										stringJoiner.add(parameterName + "()");
+					} else {
 
-									});
+						MethodSpec.Builder graphBeanProviderFunction = MethodSpec.methodBuilder(beanName)
+								.addModifiers(Modifier.PUBLIC)
+								.addStatement("return new " + upperFirstLetter(eew.name()) + "(" + commaSeparatedParams + ")")
+								.returns(eew.returnTypeName());
+						graphClass.addMethod(graphBeanProviderFunction.build());
 
-									String commaSeparatedParams = stringJoiner.toString();
+					}
 
-									MethodSpec.Builder graphBeanProviderFunction = MethodSpec.methodBuilder(beanName)
-											.addModifiers(Modifier.PUBLIC)
-											.addStatement("if ( this." + beanName + " == null ) this." + beanName + " = " + lowerFirstLetter(tew.name()) + "()." + eew.name() + "(" + commaSeparatedParams + ")")
-											.addStatement("return this." + beanName)
-											.returns(eew.returnTypeName());
+				}
 
-									graphClass.addMethod(graphBeanProviderFunction.build());
+			});
 
-								}
-
-							});
-
-				});
+		});
 
 		Map<TypeName, String> lazyBeans = new HashMap<>();
 
-		extractor.classes(LazyBean.class)
-				.forEach(tew -> {
+		extractor.classes(LazyBean.class).forEach(tew -> {
 
-					TypeName typeName = tew.typeName();
-					String name = tew.name();
+			TypeName typeName = tew.typeName();
+			String name = tew.name();
 
-					lazyBeans.put(typeName, name);
+			lazyBeans.put(typeName, name);
 
-				});
+		});
 
-		extractor.classes(EnableGraph.class)
-				.forEach(tew -> {
+		extractor.classes(EnableGraph.class).forEach(tew -> {
 
-					tew.annotationTypeMirrors(EnableGraph.class, "lazyBeans")
-							.forEach(typeMirror -> {
+			tew.annotationTypeMirrors(EnableGraph.class, "lazyBeans").forEach(typeMirror -> {
 
-								TypeName typeName = TypeNames.CLASS(typeMirror);
-								String name = types.asElement(typeMirror).getSimpleName().toString();
+				TypeName typeName = TypeNames.CLASS(typeMirror);
+				String name = types.asElement(typeMirror).getSimpleName().toString();
 
-								lazyBeans.put(typeName, name);
+				lazyBeans.put(typeName, name);
 
-							});
+			});
 
-				});
+		});
 
 		lazyBeans.forEach((typeName, name) -> {
 
@@ -213,7 +259,7 @@ public class ProcessorGraph extends ProcessorBase {
 
 		});
 
-		flush(packageName, graphClass.build());
+		flush(PACKAGE_NAME, graphClass.build());
 
 		return false;
 	}

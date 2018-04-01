@@ -10,7 +10,8 @@ public class Application {
 	private FeatureOne featureOne;
 	private FeatureTwo featureTwo;
 
-	public Application(FeatureOne featureOne, FeatureTwo featureTwo) {
+	public Application(FeatureOne featureOne,
+					   FeatureTwo featureTwo) {
 		this.featureOne = featureOne;
 		this.featureTwo = featureTwo;
 	}
@@ -43,7 +44,8 @@ public class Application {
 	}
 
 	@Bean
-	public ServiceRegistration serviceRegistration(RepositoryUsers repositoryUsers, RepositoryMobiles repositoryMobiles) {
+	public ServiceRegistration serviceRegistration(RepositoryUsers repositoryUsers,
+												   RepositoryMobiles repositoryMobiles) {
 		return new ServiceRegistration(repositoryUsers, repositoryMobiles);
 	}
 

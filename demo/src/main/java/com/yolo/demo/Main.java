@@ -7,6 +7,7 @@ import com.yolo.generated.Graph;
 public class Main {
 
 	public static void main(String[] args) {
+
 		Graph.getInstance().user(User.bishoy());
 
 		Screen screen = new Screen();
