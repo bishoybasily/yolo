@@ -13,6 +13,7 @@ import com.yolo.processor.TypeNames;
 
 import javax.annotation.processing.Processor;
 import javax.annotation.processing.SupportedAnnotationTypes;
+import javax.lang.model.element.ElementKind;
 import javax.lang.model.element.Modifier;
 import java.util.HashSet;
 import java.util.Set;
@@ -25,7 +26,7 @@ public class ProcessorWorker extends ProcessorBase {
 	@Override
 	public boolean process(Extractor extractor) {
 
-		extractor.classes(Worker.class)
+		extractor.classes(Worker.class, ElementKind.CLASS)
 				.forEach(tew -> {
 
 					String elementClassName = "Worker" + tew.name();

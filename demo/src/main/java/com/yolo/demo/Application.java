@@ -29,11 +29,6 @@ public class Application {
 	}
 
 	@Bean
-	public Database database(User user) {
-		return new Oracle(user);
-	}
-
-	@Bean
 	public RepositoryMobiles repositoryMobiles(@Qualifier("mongoDb") Database database) {
 		return new RepositoryMobiles(database);
 	}

@@ -13,6 +13,7 @@ import com.yolo.processor.TypeNames;
 
 import javax.annotation.processing.Processor;
 import javax.annotation.processing.SupportedAnnotationTypes;
+import javax.lang.model.element.ElementKind;
 import javax.lang.model.element.Modifier;
 import java.util.HashMap;
 import java.util.Map;
@@ -45,7 +46,7 @@ public class ProcessorGraph extends ProcessorBase {
 				.returns(TypeNames.CLASS("Graph"));
 		graphClass.addMethod(graphGetInstanceFunction.build());
 
-		extractor.classes(InjectMembers.class).forEach(tew -> {
+		extractor.classes(InjectMembers.class, ElementKind.CLASS).forEach(tew -> {
 
 			// injector class
 			TypeSpec.Builder injectorClass = TypeSpec.classBuilder("Injector" + tew.name())
@@ -74,7 +75,7 @@ public class ProcessorGraph extends ProcessorBase {
 
 		});
 
-		extractor.classes(Configuration.class).forEach(tew -> {
+		extractor.classes(Configuration.class, ElementKind.CLASS).forEach(tew -> {
 
 			// graph fields (configurations)
 			FieldSpec.Builder configurationField = FieldSpec.builder(tew.typeName(), lowerFirstLetter(tew.name()))
@@ -214,7 +215,7 @@ public class ProcessorGraph extends ProcessorBase {
 
 		Map<TypeName, String> lazyBeans = new HashMap<>();
 
-		extractor.classes(LazyBean.class).forEach(tew -> {
+		extractor.classes(LazyBean.class, ElementKind.CLASS, ElementKind.INTERFACE).forEach(tew -> {
 
 			TypeName typeName = tew.typeName();
 			String name = tew.name();
@@ -223,7 +224,7 @@ public class ProcessorGraph extends ProcessorBase {
 
 		});
 
-		extractor.classes(EnableGraph.class).forEach(tew -> {
+		extractor.classes(EnableGraph.class, ElementKind.CLASS).forEach(tew -> {
 
 			tew.annotationTypeMirrors(EnableGraph.class, "lazyBeans").forEach(typeMirror -> {
 

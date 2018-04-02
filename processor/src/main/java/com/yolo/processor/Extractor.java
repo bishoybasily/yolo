@@ -8,6 +8,7 @@ import javax.lang.model.element.TypeElement;
 import javax.lang.model.util.Elements;
 import javax.lang.model.util.Types;
 import java.lang.annotation.Annotation;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -29,10 +30,10 @@ public class Extractor {
 
 	}
 
-	public List<TypeElementWrapper> classes(Class<? extends Annotation> a) {
+	public List<TypeElementWrapper> classes(Class<? extends Annotation> a, ElementKind... kinds) {
 		return roundEnvironment.getElementsAnnotatedWith(a)
 				.stream()
-				.filter(elem -> elem.getKind() == ElementKind.CLASS)
+				.filter(e -> Arrays.asList(kinds).contains(e.getKind()))
 				.map(TypeElement.class::cast)
 				.map(typeElement -> new TypeElementWrapper(typeElement, filer, types, elements, messager))
 				.sorted()
