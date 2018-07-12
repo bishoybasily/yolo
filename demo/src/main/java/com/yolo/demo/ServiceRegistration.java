@@ -1,12 +1,5 @@
 package com.yolo.demo;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.experimental.Accessors;
-
-@Getter
-@Setter
-@Accessors(chain = true)
 public class ServiceRegistration {
 
 	private RepositoryUsers repositoryUsers;
@@ -16,4 +9,22 @@ public class ServiceRegistration {
 		this.repositoryUsers = repositoryUsers;
 		this.repositoryMobiles = repositoryMobiles;
 	}
+
+    public RepositoryUsers getRepositoryUsers() {
+        return repositoryUsers;
+    }
+
+    public ServiceRegistration setRepositoryUsers(RepositoryUsers repositoryUsers) {
+        this.repositoryUsers = repositoryUsers;
+        return this;
+    }
+
+    public RepositoryMobiles getRepositoryMobiles() {
+        return repositoryMobiles;
+    }
+
+    public ServiceRegistration setRepositoryMobiles(RepositoryMobiles repositoryMobiles) {
+        this.repositoryMobiles = repositoryMobiles;
+        return this;
+    }
 }

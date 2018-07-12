@@ -12,15 +12,7 @@ public class Main {
 		Graph.getInstance().database(new Oracle(User.bishoy()));
 
 		Screen screen = new Screen();
-		System.err.println(screen.activityOne.getServiceRegistration().getRepositoryUsers().getDatabase().type());
-
-
-//		System.out.println(screen.activityOne
-//				.getServiceRegistration()
-//				.getRepositoryMobiles()
-//				.getDatabase()
-//				.getValue());
-
+		System.out.println(screen.activityOne.getServiceRegistration().getRepositoryUsers().getDatabase().type());
 
 	}
 

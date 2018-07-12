@@ -7,5 +7,5 @@ com/yolo/annotations/InjectMembers.class
 com/yolo/annotations/Scope.class
 com/yolo/annotations/EnableGraph.class
 com/yolo/annotations/Worker.class
-com/yolo/annotations/Configuration.class
 com/yolo/annotations/EnableWorker.class
+com/yolo/annotations/Configuration.class

@@ -1,13 +1,8 @@
 package com.yolo.demo;
 
 import com.yolo.annotations.LazyBean;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.experimental.Accessors;
 
-@Getter
-@Setter
-@Accessors(chain = true)
+
 @LazyBean
 public class Token {
 
@@ -20,4 +15,21 @@ public class Token {
 				.setRefreshToken("abc123");
 	}
 
+    public String getAccessToken() {
+        return accessToken;
+    }
+
+    public Token setAccessToken(String accessToken) {
+        this.accessToken = accessToken;
+        return this;
+    }
+
+    public String getRefreshToken() {
+        return refreshToken;
+    }
+
+    public Token setRefreshToken(String refreshToken) {
+        this.refreshToken = refreshToken;
+        return this;
+    }
 }

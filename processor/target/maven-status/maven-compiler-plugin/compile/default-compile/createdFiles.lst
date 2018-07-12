@@ -4,8 +4,8 @@ com/yolo/processor/ExecutableElementWrapper.class
 com/yolo/processor/Extractor.class
 com/yolo/processor/worker/ProcessorWorker.class
 com/yolo/processor/ProcessorBase.class
-com/yolo/processor/graph/ProcessorGraph.class
 com/yolo/processor/Annotations.class
+com/yolo/processor/graph/ProcessorGraph.class
 com/yolo/processor/TypeElementWrapper.class
 META-INF/services/javax.annotation.processing.Processor
 com/yolo/processor/ElementWrapper.class

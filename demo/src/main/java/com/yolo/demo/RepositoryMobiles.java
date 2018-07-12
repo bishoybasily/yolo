@@ -1,12 +1,5 @@
 package com.yolo.demo;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.experimental.Accessors;
-
-@Getter
-@Setter
-@Accessors(chain = true)
 public class RepositoryMobiles {
 
 	private Database database;
@@ -15,4 +8,12 @@ public class RepositoryMobiles {
 		this.database = database;
 	}
 
+    public Database getDatabase() {
+        return database;
+    }
+
+    public RepositoryMobiles setDatabase(Database database) {
+        this.database = database;
+        return this;
+    }
 }

@@ -1,17 +1,21 @@
 package com.yolo.demo;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.experimental.Accessors;
-
-@Getter
-@Setter
-@AllArgsConstructor
-@Accessors(chain = true)
 public class MongoDb implements Database {
 
 	private User user;
+
+    public MongoDb(User user) {
+        this.user = user;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public MongoDb setUser(User user) {
+        this.user = user;
+        return this;
+    }
 
 	@Override
 	public Type type() {
