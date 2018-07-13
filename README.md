@@ -18,7 +18,7 @@ This library simplifies the process of di through a very simple api
 
 ## Example android kotlin
 
-**Full example**
+**Android example**
 ``` kotlin
 
 // configuration class for providing the beans

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b88c9dac-70cf-43e1-b40e-22845ca18efb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/annotations/target/" />
@@ -42,16 +43,16 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="75" />
-          <entry key="md" value="160" />
-          <entry key="txt" value="61" />
+          <entry key="md" value="408" />
+          <entry key="txt" value="80" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="75" />
-          <entry key="Markdown" value="160" />
-          <entry key="PLAIN_TEXT" value="61" />
+          <entry key="Markdown" value="408" />
+          <entry key="PLAIN_TEXT" value="80" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
@@ -103,8 +104,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="120">
-                <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="24" selection-end-column="90" />
+              <first_editor relative-caret-position="81">
+                <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
               </first_editor>
               <second_editor />
             </state>
@@ -195,10 +196,10 @@
         <option value="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/ServiceRegistration.java" />
         <option value="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/Token.java" />
         <option value="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/Main.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/processor/src/main/java/com/yolo/processor/graph/ProcessorGraph.java" />
         <option value="$PROJECT_DIR$/demo/target/generated-sources/annotations/com/yolo/generated/Graph.java" />
         <option value="$PROJECT_DIR$/demo/src/main/java/com/yolo/demo/FeatureOne.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -343,7 +344,7 @@
     <property name="SearchEverywhereHistoryKey" value="Grap&#9;FILE&#9;file:///home/bishoy/Work/Mine/yolo/demo/target/generated-sources/annotations/com/yolo/generated/Graph.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1531441631060" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1531441700199" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -397,7 +398,7 @@
       <option name="presentableId" value="Default" />
       <updated>1531435437515</updated>
       <workItem from="1531435440255" duration="3723000" />
-      <workItem from="1531440509849" duration="953000" />
+      <workItem from="1531440509849" duration="1222000" />
     </task>
     <task id="LOCAL-00001" summary="lombok omitted">
       <created>1531435991987</created>
@@ -413,11 +414,18 @@
       <option name="project" value="LOCAL" />
       <updated>1531441163814</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="basic readme">
+      <created>1531441711668</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1531441711668</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4676000" />
+    <option name="totallyTimeSpent" value="4945000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="48" y="-11" width="1873" height="1092" extended-state="6" />
@@ -466,7 +474,8 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="lombok omitted" />
     <MESSAGE value="prototype initialization issue fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="prototype initialization issue fixed" />
+    <MESSAGE value="basic readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="basic readme" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -683,8 +692,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="120">
-            <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="24" selection-end-column="90" />
+          <first_editor relative-caret-position="81">
+            <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
           </first_editor>
           <second_editor />
         </state>
