@@ -21,28 +21,87 @@ This library simplifies the process of di through a very simple api
 **Full example**
 ``` kotlin
 
-val requester = PermissionsRequester().with(this)
-val needed = arrayOf(Manifest.permission.CAMERA, Manifest.permission.ACCESS_FINE_LOCATION)
+// configuration class for providing the beans
+@Configuration
+public class ApplicationConfiguration {
 
+    private Application application;
 
-// to ensure that the permission is granted without requesting
-requester.ensure(needed).subscribe { fab.isEnabled = !it }
+    public ApplicationConfiguration(Application application) {
+        this.application = application;
+    }
 
-// to request the permission
-requester
-        .explain(R.string.title, R.string.message, R.string.allow, R.string.deny) // explanation dialog
-        .request(needed) // needed permissions
-        .subscribe {
+    @Bean // scope is singleton by default
+    public InputMethodManager inputMethodManager() {
+        return (InputMethodManager) application.getSystemService(Context.INPUT_METHOD_SERVICE);
+    }
 
-            if (it) {
-                // permission granted
-            } else {
-                // permission not granted
-            }
-        } // callback
+    @Bean
+    @Scope("prototype")
+    public User user() {
+        return User.dummy();
+    }
 
-// please note neither the explanation dialog nor the permission dialog will be prompted if the permission already granted,
-// it means you can safely call request even if the permission already granted
+}
 
-// you can also skip the explanation dialog if you want
-        
+// create the application class
+@EnableGraph(lazyBeans = {Application.class})
+public class DemoYoloApplication extends Application {
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+
+        Graph.getInstance().application(this);
+
+    }
+}
+
+// sample activity the recives it's dependecies injected
+@InjectMembers
+class MainActivity : AppCompatActivity() {
+
+    @Autowired
+    protected lateinit var inputMethodManager: InputMethodManager
+    @Autowired
+    protected lateinit var user: User
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+        setSupportActionBar(toolbar)
+
+        InjectorMainActivity.inject(this) // members injection
+
+        fab.setOnClickListener { view ->
+            if (currentFocus != null)
+                inputMethodManager.showSoftInput(currentFocus, InputMethodManager.SHOW_IMPLICIT)
+        }
+
+        val toggle = ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
+        drawerLayout.addDrawerListener(toggle)
+        toggle.syncState()
+
+    }
+
+    override fun onBackPressed() {
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+            drawerLayout.closeDrawer(GravityCompat.START)
+        } else {
+            super.onBackPressed()
+        }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.main, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.action_settings -> return true
+            else -> return super.onOptionsItemSelected(item)
+        }
+    }
+
+} 
