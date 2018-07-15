@@ -1,4 +1,4 @@
-package com.gmail.bishoybasily.yolo.annottions;
+package com.gmail.bishoybasily.yolo.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

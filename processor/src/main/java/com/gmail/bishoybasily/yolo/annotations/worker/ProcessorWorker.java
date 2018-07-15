@@ -1,11 +1,6 @@
 package com.gmail.bishoybasily.yolo.annotations.worker;
 
-import com.gmail.bishoybasily.yolo.annotations.Annotations;
-import com.gmail.bishoybasily.yolo.annotations.Extractor;
-import com.gmail.bishoybasily.yolo.annotations.ProcessorBase;
-import com.gmail.bishoybasily.yolo.annotations.TypeNames;
-import com.gmail.bishoybasily.yolo.annottions.Job;
-import com.gmail.bishoybasily.yolo.annottions.Worker;
+import com.gmail.bishoybasily.yolo.annotations.*;
 import com.google.auto.service.AutoService;
 import com.squareup.javapoet.CodeBlock;
 import com.squareup.javapoet.MethodSpec;

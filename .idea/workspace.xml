@@ -1,172 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="799a52c1-76f2-4b5a-8722-1ab1e3633d0a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitigonre" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.8/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.8/fileContent/annotation-processors.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.8/fileContent/fileContent.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/vcsWorkingDirs/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_auto_auto_common_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_auto_factory_auto_factory_1_0_beta5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_auto_service_auto_service_1_0_rc4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_auto_value_auto_value_1_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_1_3_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_errorprone_error_prone_annotations_2_0_18.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_googlejavaformat_google_java_format_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_guava_23_5_jre.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_j2objc_j2objc_annotations_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_javapoet_1_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_checkerframework_checker_qual_2_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_core_org_eclipse_core_commands_3_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_core_org_eclipse_core_contenttype_3_4_100.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_core_org_eclipse_core_expressions_3_4_300.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_core_org_eclipse_core_filesystem_1_3_100.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_core_org_eclipse_core_jobs_3_5_100.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_core_org_eclipse_core_resources_3_7_100.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_core_org_eclipse_core_runtime_3_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_equinox_org_eclipse_equinox_app_1_3_100.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_equinox_org_eclipse_equinox_common_3_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_equinox_org_eclipse_equinox_preferences_3_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_equinox_org_eclipse_equinox_registry_3_5_101.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_jdt_org_eclipse_jdt_core_3_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_osgi_org_eclipse_osgi_3_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_text_org_eclipse_text_3_5_101.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_projectlombok_lombok_1_16_20.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/annotations/annotations.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/annotations/annotations_main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/annotations/annotations_test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/processor/processor.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/processor/processor_main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/processor/processor_test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/sample/sample.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/sample/sample_main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/sample/sample_test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/build/classes/java/main/com/gmail/bishoybasily/yolo/annottions/Autowired.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/build/classes/java/main/com/gmail/bishoybasily/yolo/annottions/Bean.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/build/classes/java/main/com/gmail/bishoybasily/yolo/annottions/Configuration.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/build/classes/java/main/com/gmail/bishoybasily/yolo/annottions/EnableGraph.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/build/classes/java/main/com/gmail/bishoybasily/yolo/annottions/EnableWorker.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/build/classes/java/main/com/gmail/bishoybasily/yolo/annottions/InjectMembers.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/build/classes/java/main/com/gmail/bishoybasily/yolo/annottions/Job.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/build/classes/java/main/com/gmail/bishoybasily/yolo/annottions/LazyBean.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/build/classes/java/main/com/gmail/bishoybasily/yolo/annottions/Qualifier.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/build/classes/java/main/com/gmail/bishoybasily/yolo/annottions/Scope.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/build/classes/java/main/com/gmail/bishoybasily/yolo/annottions/Worker.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/build/libs/annotations-1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/out/production/classes/com/gmail/bishoybasily/yolo/annottions/Autowired.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/out/production/classes/com/gmail/bishoybasily/yolo/annottions/Bean.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/out/production/classes/com/gmail/bishoybasily/yolo/annottions/Configuration.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/out/production/classes/com/gmail/bishoybasily/yolo/annottions/EnableGraph.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/out/production/classes/com/gmail/bishoybasily/yolo/annottions/EnableWorker.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/out/production/classes/com/gmail/bishoybasily/yolo/annottions/InjectMembers.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/out/production/classes/com/gmail/bishoybasily/yolo/annottions/Job.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/out/production/classes/com/gmail/bishoybasily/yolo/annottions/LazyBean.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/out/production/classes/com/gmail/bishoybasily/yolo/annottions/Qualifier.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/out/production/classes/com/gmail/bishoybasily/yolo/annottions/Scope.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/out/production/classes/com/gmail/bishoybasily/yolo/annottions/Worker.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/Autowired.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/Bean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/Configuration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/EnableGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/EnableWorker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/InjectMembers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/Job.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/LazyBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/Qualifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/Scope.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/Worker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/libs/yolo-1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/processor/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/processor/build/classes/java/main/META-INF/services/javax.annotation.processing.Processor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/processor/build/classes/java/main/com/gmail/bishoybasily/yolo/annotations/Annotations.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/processor/build/classes/java/main/com/gmail/bishoybasily/yolo/annotations/ElementWrapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/processor/build/classes/java/main/com/gmail/bishoybasily/yolo/annotations/ExecutableElementWrapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/processor/build/classes/java/main/com/gmail/bishoybasily/yolo/annotations/Extractor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/processor/build/classes/java/main/com/gmail/bishoybasily/yolo/annotations/ProcessorBase.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/processor/build/classes/java/main/com/gmail/bishoybasily/yolo/annotations/TypeElementWrapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/processor/build/classes/java/main/com/gmail/bishoybasily/yolo/annotations/TypeNames.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/processor/build/classes/java/main/com/gmail/bishoybasily/yolo/annotations/VariableElementWrapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/processor/build/classes/java/main/com/gmail/bishoybasily/yolo/annotations/graph/ProcessorGraph.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/processor/build/classes/java/main/com/gmail/bishoybasily/yolo/annotations/worker/ProcessorWorker.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/processor/build/libs/processor-1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/processor/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/Annotations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/ElementWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/ExecutableElementWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/Extractor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/ProcessorBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/TypeElementWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/TypeNames.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/VariableElementWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/graph/ProcessorGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/worker/ProcessorWorker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/build/classes/java/main/com/gmail/bishoybasily/yolo/generated/Graph.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/build/classes/java/main/com/gmail/bishoybasily/yolo/generated/Graph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/build/classes/java/main/com/gmail/bishoybasily/yolo/sample/ActivityOne.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/build/classes/java/main/com/gmail/bishoybasily/yolo/sample/Application.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/build/classes/java/main/com/gmail/bishoybasily/yolo/sample/Database$Type.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/build/classes/java/main/com/gmail/bishoybasily/yolo/sample/Database.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/build/classes/java/main/com/gmail/bishoybasily/yolo/sample/FeatureOne.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/build/classes/java/main/com/gmail/bishoybasily/yolo/sample/FeatureTwo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/build/classes/java/main/com/gmail/bishoybasily/yolo/sample/InjectorScreen.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/build/classes/java/main/com/gmail/bishoybasily/yolo/sample/InjectorScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/build/classes/java/main/com/gmail/bishoybasily/yolo/sample/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/build/classes/java/main/com/gmail/bishoybasily/yolo/sample/MongoDb.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/build/classes/java/main/com/gmail/bishoybasily/yolo/sample/Oracle.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/build/classes/java/main/com/gmail/bishoybasily/yolo/sample/RepositoryMobiles.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/build/classes/java/main/com/gmail/bishoybasily/yolo/sample/RepositoryUsers.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/build/classes/java/main/com/gmail/bishoybasily/yolo/sample/Screen.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/build/classes/java/main/com/gmail/bishoybasily/yolo/sample/ServiceRegistration.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/build/classes/java/main/com/gmail/bishoybasily/yolo/sample/Something.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/build/classes/java/main/com/gmail/bishoybasily/yolo/sample/Token.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/build/classes/java/main/com/gmail/bishoybasily/yolo/sample/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/build/libs/sample-1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/ActivityOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/FeatureOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/FeatureTwo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/MongoDb.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Oracle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/RepositoryMobiles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/RepositoryUsers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Screen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/ServiceRegistration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Something.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Token.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yolo.iml" afterDir="false" />
+    <list default="true" id="28545886-d8ac-4f92-ba8f-7841dae0dee0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/annotations/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/processor/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/Autowired.java" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annotations/Autowired.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/Bean.java" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annotations/Bean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annotations/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/EnableGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annotations/EnableGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/EnableWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annotations/EnableWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/InjectMembers.java" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annotations/InjectMembers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annotations/Job.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/LazyBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annotations/LazyBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/Qualifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annotations/Qualifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/Scope.java" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annotations/Scope.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annotations/Worker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/Annotations.java" beforeDir="false" afterPath="$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/Annotations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/ProcessorBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/ProcessorBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/graph/ProcessorGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/graph/ProcessorGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/worker/ProcessorWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/worker/ProcessorWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/FeatureOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/FeatureOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/FeatureTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/FeatureTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Screen.java" beforeDir="false" afterPath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Screen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Token.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -193,9 +55,6 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <task path="$PROJECT_DIR$/processor">
-          <activation />
-        </task>
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
@@ -224,6 +83,13 @@
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="yolo" type="f1a62948:ProjectNode" />
+                <item name="yolo" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -235,69 +101,82 @@
     <session id="-122607783">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.2" value="2" />
-          <entry key="project.open.time.8" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.9" value="2" />
           <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gitigonre" value="1" />
-          <entry key="gradle" value="12" />
-          <entry key="java" value="63" />
+          <entry key="class" value="3" />
+          <entry key="gradle" value="13" />
+          <entry key="java" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Groovy" value="12" />
-          <entry key="JAVA" value="63" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="CLASS" value="3" />
+          <entry key="Groovy" value="13" />
+          <entry key="JAVA" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="gradle" value="37" />
-          <entry key="java" value="73" />
+          <entry key="gradle" value="63" />
+          <entry key="java" value="48" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Groovy" value="37" />
-          <entry key="JAVA" value="73" />
+          <entry key="Groovy" value="63" />
+          <entry key="JAVA" value="48" />
         </counts>
       </usages-collector>
-      <usages-collector id="statistics.js.language.service.starts" />
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Screen.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+            <state relative-caret-position="150">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitigonre">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/graph/ProcessorGraph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="192" lean-forward="true" selection-start-line="192" selection-end-line="192" />
+            <state relative-caret-position="135">
+              <caret line="26" column="82" selection-start-line="26" selection-start-column="82" selection-end-line="26" selection-end-column="82" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="12" selection-start-line="15" selection-end-line="15" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sample/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -884,13 +763,16 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="10721660233000" />
+        <entry key="$PROJECT_DIR$" value="15316718693000" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/annotations/build.gradle" value="2774160986" />
+        <entry key="$PROJECT_DIR$/annotations/settings.gradle" value="3310848034" />
         <entry key="$PROJECT_DIR$/build.gradle" value="2699388740" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2585518924" />
         <entry key="$PROJECT_DIR$/processor/build.gradle" value="2715998085" />
-        <entry key="$PROJECT_DIR$/sample/build.gradle" value="259606070" />
+        <entry key="$PROJECT_DIR$/processor/settings.gradle" value="1559373882" />
+        <entry key="$PROJECT_DIR$/sample/build.gradle" value="466496973" />
+        <entry key="$PROJECT_DIR$/sample/settings.gradle" value="2182783922" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="2897509804" />
       </map>
     </option>
@@ -925,6 +807,12 @@
                   <entry key="$PROJECT_DIR$/sample">
                     <value>
                       <ExternalModuleBuildClasspathPojo>
+                        <option name="entries">
+                          <list>
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.ltgt.gradle/gradle-apt-plugin/0.15/4958e8a648a11aa2a43afb07fb732f091c847be1/gradle-apt-plugin-0.15-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.ltgt.gradle/gradle-apt-plugin/0.15/bcf86bcd670c479460ea741d6be4e6e91abb559c/gradle-apt-plugin-0.15.jar" />
+                          </list>
+                        </option>
                         <option name="path" value="$PROJECT_DIR$/sample" />
                       </ExternalModuleBuildClasspathPojo>
                     </value>
@@ -1097,25 +985,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/processor/src/main/java/annotations/Extractor.java" />
-        <option value="$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/graph/ProcessorGraph.java" />
-        <option value="$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/Annotations.kt" />
         <option value="$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/Annotations.java" />
-        <option value="$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/worker/ProcessorWorker.java" />
-        <option value="$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/ElementWrapper.java" />
-        <option value="$PROJECT_DIR$/sample/src/main/java/com/bishoybasily/yolo/sample/ActivityOne.java" />
-        <option value="$PROJECT_DIR$/sample/src/main/java/com/bishoybasily/yolo/sample/FeatureOne.java" />
-        <option value="$PROJECT_DIR$/sample/build.gradle" />
-        <option value="$PROJECT_DIR$/processor/build.gradle" />
+        <option value="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annotations/EnableWorker.java" />
+        <option value="$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/ProcessorBase.java" />
+        <option value="$PROJECT_DIR$/annotations/settings.gradle" />
+        <option value="$PROJECT_DIR$/processor/settings.gradle" />
+        <option value="$PROJECT_DIR$/sample/settings.gradle" />
+        <option value="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/Main.java" />
         <option value="$PROJECT_DIR$/annotations/build.gradle" />
-        <option value="$PROJECT_DIR$/settings.gradle" />
-        <option value="$PROJECT_DIR$/sample/src/main/java/com/bishoybasily/yolo/sample/Main.java" />
-        <option value="$PROJECT_DIR$/sample/src/main/java/com/bishoybasily/yolo/sample/Application.java" />
-        <option value="$PROJECT_DIR$/sample/src/main/java/com/bishoybasily/yolo/sample/FeatureTwo.java" />
-        <option value="$PROJECT_DIR$/sample/src/main/java/com/bishoybasily/yolo/sample/Screen.java" />
-        <option value="$PROJECT_DIR$/sample/src/main/java/com/bishoybasily/yolo/sample/Token.java" />
-        <option value="$PROJECT_DIR$/sample/src/main/java/com/bishoybasily/yolo/sample/User.java" />
-        <option value="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Screen.java" />
+        <option value="$PROJECT_DIR$/processor/build.gradle" />
+        <option value="$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/graph/ProcessorGraph.java" />
+        <option value="$PROJECT_DIR$/sample/build.gradle" />
+        <option value="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Main.java" />
       </list>
     </option>
   </component>
@@ -1131,13 +1012,13 @@
     <option name="width" value="1873" />
     <option name="height" value="1092" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1145,31 +1026,67 @@
               <item name="yolo" type="b2602c69:ProjectViewProjectNode" />
               <item name="yolo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
+            <path>
+              <item name="yolo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yolo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="annotations" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="yolo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yolo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="processor" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="yolo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yolo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="yolo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yolo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yolo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yolo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="yolo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yolo" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="Ma&#9;FILE&#9;file:///home/bishoy/Work/Mine/yolo/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Main.java&#10;Pr&#9;FILE&#9;file:///home/bishoy/Work/Mine/yolo/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/graph/ProcessorGraph.java&#10;Main&#9;FILE&#9;file:///home/bishoy/Work/Mine/yolo/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Main.java&#10;Graph&#9;FILE&#9;file:///home/bishoy/Work/Mine/yolo/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/graph/ProcessorGraph.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1531682291248" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1531684571201" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../yolo_old/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sample/build/classes/java/main/com/gmail/bishoybasily/yolo/sample" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/sample/src/main/java/com/bishoybasily/yolo/sample" />
-      <recent name="$PROJECT_DIR$/annotations/src/main/java" />
-      <recent name="$PROJECT_DIR$/processor/src/main/java" />
+      <recent name="$PROJECT_DIR$/sample" />
+      <recent name="$PROJECT_DIR$/processor" />
+      <recent name="$PROJECT_DIR$/annotations" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1184,7 +1101,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.yolo [build]">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gmail.bishoybasily.yolo.sample.Main" />
+      <module name="sample_main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gmail.bishoybasily.yolo.sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="yolo [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -1221,10 +1151,10 @@
       </ExternalSystemSettings>
       <method v="2" />
     </configuration>
-    <configuration name="yolo:processor [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="yolo [init]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/processor" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -1232,43 +1162,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="buildDependents" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method v="2" />
-    </configuration>
-    <configuration name="yolo:processor [buildNeeded]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/processor" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="buildNeeded" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method v="2" />
-    </configuration>
-    <configuration name="yolo:processor [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/processor" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
+            <option value="init" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -1276,19 +1170,17 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.yolo:processor [buildNeeded]" />
-      <item itemvalue="Gradle.yolo:processor [buildDependents]" />
-      <item itemvalue="Gradle.yolo:processor [build]" />
       <item itemvalue="Gradle.yolo [clean]" />
       <item itemvalue="Gradle.yolo [build]" />
+      <item itemvalue="Gradle.yolo [init]" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.yolo [build]" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.yolo [clean]" />
-        <item itemvalue="Gradle.yolo:processor [build]" />
-        <item itemvalue="Gradle.yolo:processor [buildDependents]" />
-        <item itemvalue="Gradle.yolo:processor [buildNeeded]" />
+        <item itemvalue="Gradle.yolo [init]" />
+        <item itemvalue="Gradle.yolo [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -1297,24 +1189,25 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="799a52c1-76f2-4b5a-8722-1ab1e3633d0a" name="Default Changelist" comment="" />
-      <created>1531645095684</created>
+      <changelist id="28545886-d8ac-4f92-ba8f-7841dae0dee0" name="Default Changelist" comment="" />
+      <created>1531682598859</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1531645095684</updated>
-      <workItem from="1531645098732" duration="1427000" />
-      <workItem from="1531681196145" duration="50000" />
-      <workItem from="1531681261906" duration="1033000" />
+      <updated>1531682598859</updated>
+      <workItem from="1531682600074" duration="137000" />
+      <workItem from="1531682753586" duration="14000" />
+      <workItem from="1531682789821" duration="1709000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2510000" />
+    <option name="totallyTimeSpent" value="1860000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="48" y="-11" width="1873" height="1092" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24876982" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25533077" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1323,15 +1216,15 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49917987" weight="0.32943678" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32943678" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49972662" weight="0.32943678" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49972662" visible="true" weight="0.32943678" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50027335" side_tool="true" visible="true" weight="0.32943678" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49863315" weight="0.32943678" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32943678" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32943678" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1340,7 +1233,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="right" id="Gradle" order="6" weight="0.2826681" />
+      <window_info anchor="right" id="Gradle" order="6" visible="true" weight="0.24767633" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
@@ -1353,150 +1246,15 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/processor/src/main/java/annotations/ElementWrapper.java" />
-    <entry file="file://$PROJECT_DIR$/processor/src/main/java/annotations/TypeElementWrapper.java" />
-    <entry file="file://$PROJECT_DIR$/processor/src/main/java/annotations/worker/ProcessorWorker.java" />
-    <entry file="file://$PROJECT_DIR$/processor/src/main/java/annotations/VariableElementWrapper.java" />
-    <entry file="file://$PROJECT_DIR$/processor/src/main/java/annotations/Annotations.java" />
-    <entry file="file://$PROJECT_DIR$/processor/src/main/java/annotations/ProcessorBase.java" />
-    <entry file="file://$PROJECT_DIR$/processor/src/main/java/annotations/ExecutableElementWrapper.java" />
-    <entry file="file://$PROJECT_DIR$/processor/src/main/java/annotations/TypeNames.java" />
-    <entry file="file://$PROJECT_DIR$/processor/src/main/java/annotations/graph/ProcessorGraph.java" />
-    <entry file="file://$PROJECT_DIR$/processor/src/main/java/annotations/Extractor.java" />
-    <entry file="file://$PROJECT_DIR$/annotations/src/main/java/com/yolo/annotations/Bean.java" />
-    <entry file="file://$PROJECT_DIR$/annotations/src/main/java/com/yolo/annotations/Autowired.java" />
-    <entry file="file://$PROJECT_DIR$/annotations/src/main/java/com/yolo/annotations/Worker.java" />
-    <entry file="file://$PROJECT_DIR$/annotations/src/main/java/com/yolo/annotations/LazyBean.java" />
-    <entry file="file://$PROJECT_DIR$/annotations/src/main/java/com/yolo/annotations/InjectMembers.java" />
-    <entry file="file://$PROJECT_DIR$/annotations/src/main/java/com/yolo/annotations/EnableGraph.java" />
-    <entry file="file://$PROJECT_DIR$/annotations/src/main/java/com/yolo/annotations/Job.java" />
-    <entry file="file://$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/Job.java">
+    <entry file="file://$PROJECT_DIR$/sample/build/classes/java/main/com/gmail/bishoybasily/yolo/sample/InjectorScreen.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/ElementWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/TypeElementWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/worker/ProcessorWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/Annotations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="78" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/Bean.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/Scope.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/EnableGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="30" selection-start-line="4" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/annotations/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/processor/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
+    <entry file="file://$PROJECT_DIR$/sample/build/classes/java/main/com/gmail/bishoybasily/yolo/sample/Token.class">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="47" selection-start-column="47" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/graph/ProcessorGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#793#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/ActivityOne.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/FeatureOne.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="77" selection-start-line="17" selection-start-column="77" selection-end-line="17" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/FeatureTwo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1507,156 +1265,129 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Oracle.java">
+    <entry file="file://$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/Annotations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="90">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/RepositoryMobiles.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/RepositoryUsers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/ServiceRegistration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Something.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Token.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/build/classes/java/main/com/gmail/bishoybasily/yolo/generated/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1011" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/build/classes/java/main/com/gmail/bishoybasily/yolo/sample/InjectorScreen.java">
+    <entry file="file://$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annotations/EnableWorker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="42" selection-start-column="8" selection-end-column="42" />
+          <caret column="43" selection-start-column="43" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Screen.java">
+    <entry file="file://$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/ProcessorBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        <state relative-caret-position="570">
+          <caret line="53" column="9" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitigonre">
+    <entry file="file://$PROJECT_DIR$/sample/build/classes/java/main/com/gmail/bishoybasily/yolo/sample/Graph.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="192" lean-forward="true" selection-start-line="192" selection-end-line="192" />
+        <state relative-caret-position="-615">
+          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>annotations_main|annotations</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Gradle: com.google.auto.factory:auto-factory:1.0-beta5</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/com/sun/corba/se/impl/orbutil/graph/Graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annotations/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annotations/EnableGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/processor/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/annotations/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/annotations/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/processor/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/build/classes/java/main/com/gmail/bishoybasily/yolo/sample/Graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="12" selection-start-line="15" selection-end-line="15" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/graph/ProcessorGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="26" column="82" selection-start-line="26" selection-start-column="82" selection-end-line="26" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

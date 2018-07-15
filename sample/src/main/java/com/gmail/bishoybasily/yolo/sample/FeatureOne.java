@@ -1,9 +1,9 @@
 package com.gmail.bishoybasily.yolo.sample;
 
-import com.gmail.bishoybasily.yolo.annottions.Bean;
-import com.gmail.bishoybasily.yolo.annottions.Configuration;
-import com.gmail.bishoybasily.yolo.annottions.Qualifier;
-import com.gmail.bishoybasily.yolo.annottions.Scope;
+import com.gmail.bishoybasily.yolo.annotations.Bean;
+import com.gmail.bishoybasily.yolo.annotations.Configuration;
+import com.gmail.bishoybasily.yolo.annotations.Qualifier;
+import com.gmail.bishoybasily.yolo.annotations.Scope;
 
 
 @Configuration

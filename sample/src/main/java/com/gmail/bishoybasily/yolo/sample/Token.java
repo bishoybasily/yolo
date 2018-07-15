@@ -1,6 +1,6 @@
 package com.gmail.bishoybasily.yolo.sample;
 
-import com.gmail.bishoybasily.yolo.annottions.LazyBean;
+import com.gmail.bishoybasily.yolo.annotations.LazyBean;
 
 
 @LazyBean

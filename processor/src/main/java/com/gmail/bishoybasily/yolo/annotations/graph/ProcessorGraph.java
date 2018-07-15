@@ -1,10 +1,6 @@
 package com.gmail.bishoybasily.yolo.annotations.graph;
 
-import com.gmail.bishoybasily.yolo.annotations.Annotations;
-import com.gmail.bishoybasily.yolo.annotations.Extractor;
-import com.gmail.bishoybasily.yolo.annotations.ProcessorBase;
-import com.gmail.bishoybasily.yolo.annotations.TypeNames;
-import com.gmail.bishoybasily.yolo.annottions.*;
+import com.gmail.bishoybasily.yolo.annotations.*;
 import com.google.auto.service.AutoService;
 import com.squareup.javapoet.FieldSpec;
 import com.squareup.javapoet.MethodSpec;
@@ -24,7 +20,7 @@ import java.util.StringJoiner;
 @SupportedAnnotationTypes(Annotations.ENABLE_GRAPH)
 public class ProcessorGraph extends ProcessorBase {
 
-    private static final String PACKAGE_NAME = "com.gmail.bishoybasily.yolo.generated";
+    private static final String PACKAGE_NAME = "com.gmail.bishoybasily.yolo.sample.generated";
 
     @Override
     public boolean process(Extractor extractor) {

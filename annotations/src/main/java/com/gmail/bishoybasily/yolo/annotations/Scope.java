@@ -1,14 +1,15 @@
-package com.gmail.bishoybasily.yolo.annottions;
+package com.gmail.bishoybasily.yolo.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target({ElementType.METHOD, ElementType.FIELD, ElementType.PARAMETER})
+@Target({ElementType.METHOD, ElementType.TYPE})
 @Retention(RetentionPolicy.SOURCE)
-public @interface Qualifier {
+public @interface Scope {
 
-    String value() default "";
+    String value() default "singleton";
+
 
 }

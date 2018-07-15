@@ -1,4 +1,4 @@
-package com.gmail.bishoybasily.yolo.annottions;
+package com.gmail.bishoybasily.yolo.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -8,7 +8,7 @@ import java.lang.annotation.Target;
 /**
  * Created by bishoy on 7/18/17.
  */
-@Target(ElementType.TYPE)
+@Target(ElementType.METHOD)
 @Retention(RetentionPolicy.SOURCE)
-public @interface Worker {
+public @interface Job {
 }

@@ -1,8 +1,8 @@
 package com.gmail.bishoybasily.yolo.sample;
 
-import com.gmail.bishoybasily.yolo.annottions.Autowired;
-import com.gmail.bishoybasily.yolo.annottions.InjectMembers;
-import com.gmail.bishoybasily.yolo.annottions.Qualifier;
+import com.gmail.bishoybasily.yolo.annotations.Autowired;
+import com.gmail.bishoybasily.yolo.annotations.InjectMembers;
+import com.gmail.bishoybasily.yolo.annotations.Qualifier;
 
 @InjectMembers
 public class Screen {
@@ -16,6 +16,6 @@ public class Screen {
     protected ActivityOne activityOne;
 
     public Screen() {
-//        InjectorScreen.inject(this);
+        InjectorScreen.inject(this);
     }
 }
