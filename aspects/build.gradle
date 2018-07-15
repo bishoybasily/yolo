@@ -1,0 +1,23 @@
+
+import org.aspectj.bridge.IMessage
+import org.aspectj.bridge.MessageHandler
+import org.aspectj.tools.ajc.Main
+
+plugins {
+    id 'java'
+}
+
+group 'com.gmail.bishoybasily.yolo'
+version '1.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    implementation 'org.aspectj:aspectjrt:1.8.1'
+}
