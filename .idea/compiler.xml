@@ -2,20 +2,15 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile name="Maven default annotation processors profile" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="annotations" />
-        <module name="demo" />
-        <module name="processor" />
-      </profile>
+      <profile default="true" name="Default" enabled="true" />
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="annotations" target="1.8" />
-      <module name="demo" target="1.8" />
-      <module name="processor" target="1.8" />
-      <module name="yolo" target="1.5" />
+      <module name="annotations_main" target="1.8" />
+      <module name="annotations_test" target="1.8" />
+      <module name="processor_main" target="1.8" />
+      <module name="processor_test" target="1.8" />
+      <module name="sample_main" target="1.8" />
+      <module name="sample_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
