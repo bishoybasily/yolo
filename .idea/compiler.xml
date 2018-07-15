@@ -15,7 +15,6 @@
       <module name="annotations" target="1.8" />
       <module name="demo" target="1.8" />
       <module name="processor" target="1.8" />
-      <module name="sample" target="1.8" />
       <module name="yolo" target="1.5" />
     </bytecodeTargetLevel>
   </component>
