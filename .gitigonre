@@ -1,5 +1,5 @@
 
-# Created by https://www.gitignore.io/api/java,gradle,android,intellij,intellij+all,intellij+iml
+# Created by https://www.gitignore.io/api/java,kotlin,gradle,android,intellij,intellij+all,intellij+iml
 
 ### Android ###
 # Built application files
@@ -254,6 +254,19 @@ modules.xml
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
+### Kotlin ###
+# Compiled class file
+
+# Log file
+
+# BlueJ files
+
+# Mobile Tools for Java (J2ME)
+
+# Package Files #
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+
 ### Gradle ###
 .gradle
 /build/
@@ -271,4 +284,4 @@ gradle-app.setting
 # gradle/wrapper/gradle-wrapper.properties
 
 
-# End of https://www.gitignore.io/api/java,gradle,android,intellij,intellij+all,intellij+iml
+# End of https://www.gitignore.io/api/java,kotlin,gradle,android,intellij,intellij+all,intellij+iml

@@ -2,33 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28545886-d8ac-4f92-ba8f-7841dae0dee0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/annotations/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/processor/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/Autowired.java" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annotations/Autowired.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/Bean.java" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annotations/Bean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annotations/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/EnableGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annotations/EnableGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/EnableWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annotations/EnableWorker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/InjectMembers.java" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annotations/InjectMembers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annotations/Job.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/LazyBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annotations/LazyBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/Qualifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annotations/Qualifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/Scope.java" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annotations/Scope.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annottions/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/annotations/src/main/java/com/gmail/bishoybasily/yolo/annotations/Worker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/Annotations.java" beforeDir="false" afterPath="$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/Annotations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/ProcessorBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/ProcessorBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/graph/ProcessorGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/graph/ProcessorGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/worker/ProcessorWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/worker/ProcessorWorker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sample/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/sample/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/FeatureOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/FeatureOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/FeatureTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/FeatureTwo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Screen.java" beforeDir="false" afterPath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Screen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Token.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Main.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -110,59 +88,46 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="3" />
-          <entry key="gradle" value="13" />
-          <entry key="java" value="17" />
+          <entry key="gradle" value="14" />
+          <entry key="java" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="3" />
-          <entry key="Groovy" value="13" />
-          <entry key="JAVA" value="17" />
+          <entry key="Groovy" value="14" />
+          <entry key="JAVA" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="gradle" value="63" />
-          <entry key="java" value="48" />
+          <entry key="gradle" value="64" />
+          <entry key="java" value="54" />
+          <entry key="kt" value="15" />
+          <entry key="txt" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Groovy" value="63" />
-          <entry key="JAVA" value="48" />
+          <entry key="Groovy" value="64" />
+          <entry key="JAVA" value="54" />
+          <entry key="Kotlin" value="15" />
+          <entry key="PLAIN_TEXT" value="21" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts" />
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Main.java">
+        <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="315">
+              <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#44#153#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/graph/ProcessorGraph.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="26" column="82" selection-start-line="26" selection-start-column="82" selection-end-line="26" selection-end-column="82" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="12" selection-start-line="15" selection-end-line="15" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -170,8 +135,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sample/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+            <state relative-caret-position="285">
+              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -245,6 +210,10 @@
                 <option name="name" value="buildDependents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="inspectClassesForKotlinIC" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Displays the dependent components of components in root project 'yolo'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependentComponents" />
@@ -309,6 +278,11 @@
                 <option name="name" value="compileJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Compiles the source set 'test'.kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileTestKotlin" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Displays the insight into a specific dependency in root project 'yolo'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencyInsight" />
@@ -347,6 +321,11 @@
                 <option name="description" value="Displays a help message." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles the source set 'main'.kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileKotlin" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project." />
@@ -642,6 +621,10 @@
                 <option name="name" value="buildDependents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sample" />
+                <option name="name" value="inspectClassesForKotlinIC" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Displays the sub-projects of project ':sample'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sample" />
                 <option name="name" value="projects" />
@@ -702,6 +685,11 @@
                 <option name="name" value="compileJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Compiles the source set 'test'.kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sample" />
+                <option name="name" value="compileTestKotlin" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Displays the insight into a specific dependency in project ':sample'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sample" />
                 <option name="name" value="dependencyInsight" />
@@ -742,6 +730,11 @@
                 <option name="name" value="help" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Compiles the source set 'main'.kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sample" />
+                <option name="name" value="compileKotlin" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/sample" />
                 <option name="name" value="build" />
@@ -763,7 +756,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="15316718693000" />
+        <entry key="$PROJECT_DIR$" value="15316718991000" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/annotations/build.gradle" value="2774160986" />
         <entry key="$PROJECT_DIR$/annotations/settings.gradle" value="3310848034" />
@@ -771,7 +764,7 @@
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2585518924" />
         <entry key="$PROJECT_DIR$/processor/build.gradle" value="2715998085" />
         <entry key="$PROJECT_DIR$/processor/settings.gradle" value="1559373882" />
-        <entry key="$PROJECT_DIR$/sample/build.gradle" value="466496973" />
+        <entry key="$PROJECT_DIR$/sample/build.gradle" value="3766450348" />
         <entry key="$PROJECT_DIR$/sample/settings.gradle" value="2182783922" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="2897509804" />
       </map>
@@ -810,7 +803,45 @@
                         <option name="entries">
                           <list>
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.ltgt.gradle/gradle-apt-plugin/0.15/4958e8a648a11aa2a43afb07fb732f091c847be1/gradle-apt-plugin-0.15-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin/1.2.51/aecae45d74a02e6302b967d37c948802d03495f/kotlin-gradle-plugin-1.2.51-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.2.51/e43dea38cb1055ee07824ea9b5914c16fc8f02f0/kotlin-gradle-plugin-api-1.2.51-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.2.51/8bb19b3d20cbb1498ce98ac56cad1107ed5355b0/kotlin-compiler-embeddable-1.2.51-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing-gradle/1.2.51/c3d255ffe5c10d60e3c09ba5aee868a3907e33ad/kotlin-annotation-processing-gradle-1.2.51-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.2.51/3a04003373be1b42f8615dd6fc737c44d80ebd4b/kotlin-android-extensions-1.2.51-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-runner/1.2.51/c95f21556c0ee6246745bca9f15f45400b39c737/kotlin-compiler-runner-1.2.51-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.2.51/f55f2b742e87f3424754e572763c9960dab8a5e8/kotlin-reflect-1.2.51-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-common/1.2.51/8bed853d57ddc87fcab4c100421aa8a654d36f99/kotlin-scripting-common-1.2.51-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-compiler/1.2.51/ca2324aa47aec7266ee6b7839596899a5a92a250/kotlin-scripting-compiler-1.2.51-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-gradle/1.2.51/bead3afbce03fb4bbc121779db5b2ef7080e0c74/kotlin-scripting-gradle-1.2.51-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.51/649a609725b857dd285cf69d49d4f1f77335076e/kotlin-stdlib-1.2.51-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.2.51/6522b3c352cee32fa8a6a8184d955f20af8469b0/kotlin-script-runtime-1.2.51-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-common/1.2.51/a491f5743a35bb1b884b0a5141c33abdea08654c/kotlin-build-common-1.2.51-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-client/1.2.51/5a2d34f7ec26cdeddb329bda7f6fa99a44b981be/kotlin-daemon-client-1.2.51-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core/0.20/69aa4e6352eee317fe50ae2146ec628c59be3845/kotlinx-coroutines-core-0.20-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-jvm/1.2.51/958337dbddf8b87f3f688b942b89738356745326/kotlin-scripting-jvm-1.2.51-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-misc/1.2.51/f15e62280560a4167f13b38cf40869eb4a8542c4/kotlin-scripting-misc-1.2.51-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.2.51/e8c91083a5863d94fdc2836459e7e7a555774be9/kotlin-stdlib-common-1.2.51-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/5991ca87ef1fb5544943d9abc5a9a37583fabe03/annotations-13.0-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.ltgt.gradle/gradle-apt-plugin/0.15/bcf86bcd670c479460ea741d6be4e6e91abb559c/gradle-apt-plugin-0.15.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin/1.2.51/d98bfc97c13e068b768f95271b6a58bafd16fce7/kotlin-gradle-plugin-1.2.51.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.2.51/94527237963c0dbd7c1c7f0b9a63c629401e72e0/kotlin-gradle-plugin-api-1.2.51.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.2.51/205147cc6c2dcbe7d9d71125fe315b14b8a14be4/kotlin-compiler-embeddable-1.2.51.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing-gradle/1.2.51/8cd0f527d68195e3c008302744ad319d24499cd7/kotlin-annotation-processing-gradle-1.2.51.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.2.51/1755c607e5fabf4ba949ef626c73fc7421d35123/kotlin-android-extensions-1.2.51.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-runner/1.2.51/f33d0a38c0d98e249e15a72616837c26bb15aabd/kotlin-compiler-runner-1.2.51.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.2.51/36b719a7b84452dd13eeec979d8c82bfb765c57d/kotlin-reflect-1.2.51.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-common/1.2.51/7861b42b7e5625df4a230d868476d4cda331be77/kotlin-scripting-common-1.2.51.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-compiler/1.2.51/a8600da3b271224db902d8a30a4898a861b008ca/kotlin-scripting-compiler-1.2.51.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-gradle/1.2.51/ba083f1a77caf84bbf1cd43e86e935681cc2a26d/kotlin-scripting-gradle-1.2.51.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.51/fa8127e505bff50fec291d0dd619d1bda5c619e0/kotlin-stdlib-1.2.51.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.2.51/6f8ef6758f396b354e422c3e82d9cd14795fe0e2/kotlin-script-runtime-1.2.51.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-common/1.2.51/114e0ff82a2fc1f4e55d6525137a69f2f8da4f52/kotlin-build-common-1.2.51.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-client/1.2.51/54cd719230806bfc119b6f9a28e33416233a8971/kotlin-daemon-client-1.2.51.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core/0.20/5f3fa9b5b2dc9cfc0d9358d5b2cab154d590a564/kotlinx-coroutines-core-0.20.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-jvm/1.2.51/f80afc81cf004fb572f8a09353960490ab6630c6/kotlin-scripting-jvm-1.2.51.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-misc/1.2.51/e7645e214f9178ed1423c937fc4e2f3bd04c8831/kotlin-scripting-misc-1.2.51.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.2.51/e4a9d4b13ab19ed1e6531fce6df98e8cfa7f7301/kotlin-stdlib-common-1.2.51.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" />
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$/sample" />
@@ -994,9 +1025,11 @@
         <option value="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/Main.java" />
         <option value="$PROJECT_DIR$/annotations/build.gradle" />
         <option value="$PROJECT_DIR$/processor/build.gradle" />
+        <option value="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Screen.java" />
         <option value="$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/graph/ProcessorGraph.java" />
-        <option value="$PROJECT_DIR$/sample/build.gradle" />
         <option value="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Main.java" />
+        <option value="$PROJECT_DIR$/sample/build.gradle" />
+        <option value="$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Main.kt" />
       </list>
     </option>
   </component>
@@ -1070,10 +1103,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="Ma&#9;FILE&#9;file:///home/bishoy/Work/Mine/yolo/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Main.java&#10;Pr&#9;FILE&#9;file:///home/bishoy/Work/Mine/yolo/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/graph/ProcessorGraph.java&#10;Main&#9;FILE&#9;file:///home/bishoy/Work/Mine/yolo/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Main.java&#10;Graph&#9;FILE&#9;file:///home/bishoy/Work/Mine/yolo/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/graph/ProcessorGraph.java" />
+    <property name="SearchEverywhereHistoryKey" value="Main&#9;FILE&#9;file:///home/bishoy/Work/Mine/yolo/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Main.java&#10;Ma&#9;FILE&#9;file:///home/bishoy/Work/Mine/yolo/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Main.java&#10;Pr&#9;FILE&#9;file:///home/bishoy/Work/Mine/yolo/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/graph/ProcessorGraph.java&#10;Graph&#9;FILE&#9;file:///home/bishoy/Work/Mine/yolo/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/graph/ProcessorGraph.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1531684571201" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1531684918946" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../yolo_old/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -1101,7 +1134,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Kotlin.com.gmail.bishoybasily.yolo.sample.MainKt">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.gmail.bishoybasily.yolo.sample.Main" />
       <module name="sample_main" />
@@ -1169,14 +1202,29 @@
       </ExternalSystemSettings>
       <method v="2" />
     </configuration>
+    <configuration name="com.gmail.bishoybasily.yolo.sample.MainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="sample_main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.gmail.bishoybasily.yolo.sample.MainKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Gradle.yolo [clean]" />
       <item itemvalue="Gradle.yolo [build]" />
       <item itemvalue="Gradle.yolo [init]" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="Kotlin.com.gmail.bishoybasily.yolo.sample.MainKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.com.gmail.bishoybasily.yolo.sample.MainKt" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.yolo [clean]" />
         <item itemvalue="Gradle.yolo [init]" />
@@ -1196,12 +1244,20 @@
       <updated>1531682598859</updated>
       <workItem from="1531682600074" duration="137000" />
       <workItem from="1531682753586" duration="14000" />
-      <workItem from="1531682789821" duration="1709000" />
+      <workItem from="1531682789821" duration="2016000" />
     </task>
+    <task id="LOCAL-00001" summary="before testing kotlin">
+      <created>1531684647147</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1531684647147</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1860000" />
+    <option name="totallyTimeSpent" value="2167000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="48" y="-11" width="1873" height="1092" extended-state="6" />
@@ -1217,7 +1273,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32943678" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3995749" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1242,8 +1298,19 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="before testing kotlin" />
+    <option name="LAST_COMMIT_MESSAGE" value="before testing kotlin" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/sample/build/classes/java/main/com/gmail/bishoybasily/yolo/sample/InjectorScreen.java">
@@ -1358,33 +1425,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/graph/ProcessorGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="22" column="75" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Screen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="12" selection-start-line="15" selection-end-line="15" selection-end-column="29" />
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <folding>
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sample/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+        <state relative-caret-position="285">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/processor/src/main/java/com/gmail/bishoybasily/yolo/annotations/graph/ProcessorGraph.java">
+    <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="26" column="82" selection-start-line="26" selection-start-column="82" selection-end-line="26" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/gmail/bishoybasily/yolo/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="315">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#44#153#0" expanded="true" />
           </folding>
         </state>
       </provider>

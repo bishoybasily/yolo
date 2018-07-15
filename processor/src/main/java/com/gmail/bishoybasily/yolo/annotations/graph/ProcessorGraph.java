@@ -20,7 +20,7 @@ import java.util.StringJoiner;
 @SupportedAnnotationTypes(Annotations.ENABLE_GRAPH)
 public class ProcessorGraph extends ProcessorBase {
 
-    private static final String PACKAGE_NAME = "com.gmail.bishoybasily.yolo.sample.generated";
+    private static final String PACKAGE_NAME = "com.gmail.bishoybasily.yolo.generated";
 
     @Override
     public boolean process(Extractor extractor) {
