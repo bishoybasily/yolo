@@ -1,2 +1,1 @@
-include ':annotations', ':processor', ':aspects', ':sample'
-rootProject.name = 'yolo'
+include ':sample', ':processor', ':annotations', ':aspects'

@@ -1,2 +1,2 @@
-com.gmail.bishoybasily.yolo.annotations.graph.ProcessorGraph
-com.gmail.bishoybasily.yolo.annotations.worker.ProcessorWorker
+com.gmail.bishoybasily.yolo.processor.graph.ProcessorGraph
+com.gmail.bishoybasily.yolo.processor.worker.ProcessorWorker
