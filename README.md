@@ -2,8 +2,6 @@
 
 [![](https://jitpack.io/v/bishoybasily-fidelyo/yolo.svg)](https://jitpack.io/#bishoybasily-fidelyo/yolo)
 
-[!Run in Postman‌‌](https://app.getpostman.com/run-collection/1ea5ff8177658668ebb1)
-
 ## Overview
 
 This library simplifies the process of di through a very simple api
