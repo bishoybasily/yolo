@@ -1,16 +1,15 @@
 package com.gmail.bishoybasily.yolo.sample
 
 import android.os.Bundle
-import android.support.design.widget.Snackbar
-import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.view.inputmethod.InputMethodManager
+import androidx.appcompat.app.AppCompatActivity
 import com.gmail.bishoybasily.yolo.annotations.Autowired
 import com.gmail.bishoybasily.yolo.annotations.InjectMembers
 import com.gmail.bishoybasily.yolo.aspects.annotation.DebugTrace
-
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
 
 @InjectMembers
@@ -35,8 +34,9 @@ class MainActivity : AppCompatActivity() {
 
     @DebugTrace
     fun showSnackbar(view: View) {
-        testAspects.doSomething()
-        Snackbar.make(view, "Replace with your own action ${inputMethodManager == null}", Snackbar.LENGTH_LONG)
+        if (::testAspects.isInitialized)
+            testAspects.doSomething()
+        Snackbar.make(view, "Replace with your own action ${::inputMethodManager.isInitialized}", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
     }
 

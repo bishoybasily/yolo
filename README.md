@@ -1,6 +1,6 @@
-# Dependency injection for java & android
+# Dependency injection, quick services and aspects for android
 
-[![](https://jitpack.io/v/bishoybasily-fidelyo/yolo.svg)](https://jitpack.io/#bishoybasily-fidelyo/yolo)
+[![](https://jitpack.io/v/bishoybasily/yolo.svg)](https://jitpack.io/#bishoybasily/yolo)
 
 ## Overview
 
@@ -12,8 +12,8 @@ This library simplifies the process of di through a very simple api
     }
 
     dependencies {
-        implementation 'com.github.bishoybasily-fidelyo.yolo:annotations:$version'
-        kapt 'com.github.bishoybasily-fidelyo.yolo:processor:$version'
+        implementation 'com.github.bishoybasily.yolo:annotations:$version'
+        kapt 'com.github.bishoybasily.yolo:processor:$version'
     }
 
 ## Example android kotlin
