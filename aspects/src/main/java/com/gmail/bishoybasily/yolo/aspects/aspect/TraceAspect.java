@@ -5,13 +5,13 @@
  */
 package com.gmail.bishoybasily.yolo.aspects.aspect;
 
-import android.util.Log;
-
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.reflect.MethodSignature;
 
+import zipkin2.reporter.AsyncReporter;
+import zipkin2.reporter.Reporter;
+import zipkin2.reporter.okhttp3.OkHttpSender;
 /**
  * Aspect representing the cross cutting-concern: Method and Constructor Tracing.
  */
@@ -28,18 +28,24 @@ public class TraceAspect {
 
     @Around("execution(@com.gmail.bishoybasily.yolo.aspects.annotation.DebugTrace * *(..))")
     public Object weaveJoinPoint(ProceedingJoinPoint joinPoint) throws Throwable {
-        MethodSignature methodSignature = (MethodSignature) joinPoint.getSignature();
 
-        String className = methodSignature.getDeclaringType().getSimpleName();
-        String methodName = methodSignature.getName();
 
-        Long start = System.currentTimeMillis();
+        Reporter reporter = AsyncReporter.builder(OkHttpSender.create("127.0.0.1:9411/api/v1/spans")).build();
+        Brave brave = Brave.Builder("example").reporter(reporter).build();
+
+
+//        MethodSignature methodSignature = (MethodSignature) joinPoint.getSignature();
+//
+//        String className = methodSignature.getDeclaringType().getSimpleName();
+//        String methodName = methodSignature.getName();
+//
+//        Long start = System.currentTimeMillis();
         Object result = joinPoint.proceed();
-        Long end = System.currentTimeMillis();
-
-        System.out.println(" took time millis" + (end - start));
-
-        Log.d("@@", "class: " + className + ", method: " + methodName);
+//        Long end = System.currentTimeMillis();
+//
+//        System.out.println(" took time millis" + (end - start));
+//
+//        Log.d("@@", "class: " + className + ", method: " + methodName);
 
         return result;
     }
