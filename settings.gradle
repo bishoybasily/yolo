@@ -1,3 +1,5 @@
+rootProject.name = 'yolo'
+
 include 'sample'
 include 'processor'
 include 'annotations'
