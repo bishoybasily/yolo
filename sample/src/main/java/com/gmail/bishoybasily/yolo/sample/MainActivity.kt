@@ -8,7 +8,6 @@ import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
 import com.gmail.bishoybasily.yolo.annotations.Autowired
 import com.gmail.bishoybasily.yolo.annotations.InjectMembers
-import com.gmail.bishoybasily.yolo.aspects.annotation.DebugTrace
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -32,7 +31,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    @DebugTrace
     fun showSnackbar(view: View) {
         if (::testAspects.isInitialized)
             testAspects.doSomething()
