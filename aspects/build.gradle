@@ -28,19 +28,19 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation 'androidx.appcompat:appcompat:1.0.2'
-    implementation 'org.aspectj:aspectjrt:1.9.1'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'org.aspectj:aspectjrt:1.9.4'
 
     implementation project(':annotations')
 
-    implementation group: 'io.zipkin.brave', name: 'brave', version: '5.5.1'
+    implementation group: 'io.zipkin.brave', name: 'brave', version: '5.8.0'
 
-    implementation group: 'io.zipkin.reporter2', name: 'zipkin-sender-okhttp3', version: '2.7.11'
+    implementation group: 'io.zipkin.reporter2', name: 'zipkin-sender-okhttp3', version: '2.10.3'
 
 
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test:runner:1.1.0'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
 
 
