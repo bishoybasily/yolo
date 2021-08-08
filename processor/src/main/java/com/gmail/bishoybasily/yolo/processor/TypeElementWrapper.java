@@ -13,9 +13,6 @@ import javax.lang.model.element.VariableElement;
 import javax.lang.model.util.Elements;
 import javax.lang.model.util.Types;
 
-import lombok.Getter;
-
-@Getter
 public class TypeElementWrapper extends ElementWrapper<TypeElement> implements Comparable<TypeElementWrapper> {
 
     protected ExecutableElementWrapper constructor;
@@ -79,8 +76,26 @@ public class TypeElementWrapper extends ElementWrapper<TypeElement> implements C
                 .collect(Collectors.toList());
     }
 
+    public ExecutableElementWrapper getConstructor() {
+        return constructor;
+    }
+
+    public List<VariableElementWrapper> getConstructorDependencies() {
+        return constructorDependencies;
+    }
+
+    public List<VariableElementWrapper> getFields() {
+        return fields;
+    }
+
+    public List<ExecutableElementWrapper> getMethods() {
+        return methods;
+    }
+
     @Override
     public int compareTo(TypeElementWrapper o) {
         return constructorDependencies.size() - o.constructorDependencies.size();
     }
+
+
 }

@@ -20,11 +20,6 @@ import javax.lang.model.type.TypeMirror;
 import javax.lang.model.util.Elements;
 import javax.lang.model.util.Types;
 
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-
-@Getter
-@EqualsAndHashCode(of = {"e"})
 public class ElementWrapper<E extends Element> {
 
     protected E e;
@@ -100,4 +95,38 @@ public class ElementWrapper<E extends Element> {
                 .map(o -> o.get(key));
     }
 
+    public E getE() {
+        return e;
+    }
+
+    public Filer getFiler() {
+        return filer;
+    }
+
+    public Types getTypes() {
+        return types;
+    }
+
+    public Elements getElements() {
+        return elements;
+    }
+
+    public Messager getMessager() {
+        return messager;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        ElementWrapper<?> that = (ElementWrapper<?>) o;
+
+        return e != null ? e.equals(that.e) : that.e == null;
+    }
+
+    @Override
+    public int hashCode() {
+        return e != null ? e.hashCode() : 0;
+    }
 }

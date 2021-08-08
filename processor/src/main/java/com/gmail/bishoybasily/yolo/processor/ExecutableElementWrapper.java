@@ -14,13 +14,7 @@ import javax.lang.model.element.VariableElement;
 import javax.lang.model.util.Elements;
 import javax.lang.model.util.Types;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.experimental.Accessors;
 
-@Getter
-@Setter
-@Accessors(chain = true)
 public class ExecutableElementWrapper extends ElementWrapper<ExecutableElement> implements Comparable<ExecutableElementWrapper> {
 
     protected List<VariableElementWrapper> params;
@@ -43,5 +37,14 @@ public class ExecutableElementWrapper extends ElementWrapper<ExecutableElement> 
     @Override
     public int compareTo(ExecutableElementWrapper o) {
         return params.size() - o.params.size();
+    }
+
+    public List<VariableElementWrapper> getParams() {
+        return params;
+    }
+
+    public ExecutableElementWrapper setParams(List<VariableElementWrapper> params) {
+        this.params = params;
+        return this;
     }
 }

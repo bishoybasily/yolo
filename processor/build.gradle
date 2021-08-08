@@ -5,13 +5,10 @@ dependencies {
 
     implementation project(':annotations')
 
-    implementation group: 'com.google.auto.service', name: 'auto-service', version: '1.0-rc6'
-    implementation group: 'com.google.auto.factory', name: 'auto-factory', version: '1.0-beta7'
-    implementation group: 'com.google.auto.value', name: 'auto-value', version: '1.7'
+    annotationProcessor group: 'com.google.auto.service', name: 'auto-service', version: '1.0'
+    implementation group: 'com.google.auto.service', name: 'auto-service', version: '1.0'
 
-    implementation group: 'org.projectlombok', name: 'lombok', version: '1.18.10'
-
-    implementation group: 'com.squareup', name: 'javapoet', version: '1.11.1'
+    implementation group: 'com.squareup', name: 'javapoet', version: '1.13.0'
 }
 
 sourceCompatibility = "1.8"
