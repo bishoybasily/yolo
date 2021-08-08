@@ -10,7 +10,7 @@ import java.lang.annotation.Target;
  */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface EnableGraph {
+public @interface ComponentScan {
 
     Class<?>[] lazyBeans() default {};
 

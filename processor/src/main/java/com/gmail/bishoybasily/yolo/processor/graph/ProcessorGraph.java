@@ -3,7 +3,7 @@ package com.gmail.bishoybasily.yolo.processor.graph;
 import com.gmail.bishoybasily.yolo.annotations.Autowired;
 import com.gmail.bishoybasily.yolo.annotations.Bean;
 import com.gmail.bishoybasily.yolo.annotations.Configuration;
-import com.gmail.bishoybasily.yolo.annotations.EnableGraph;
+import com.gmail.bishoybasily.yolo.annotations.ComponentScan;
 import com.gmail.bishoybasily.yolo.annotations.InjectMembers;
 import com.gmail.bishoybasily.yolo.annotations.LazyBean;
 import com.gmail.bishoybasily.yolo.annotations.Qualifier;
@@ -29,7 +29,7 @@ import javax.lang.model.element.Modifier;
 
 @AutoService(Processor.class)
 //@SupportedSourceVersion(SourceVersion.RELEASE_8)
-@SupportedAnnotationTypes(Annotations.ENABLE_GRAPH)
+@SupportedAnnotationTypes(Annotations.COMPONENT_SCAN)
 public class ProcessorGraph extends ProcessorBase {
 
     private static final String PACKAGE_NAME = "com.gmail.bishoybasily.yolo.generated";
@@ -232,9 +232,9 @@ public class ProcessorGraph extends ProcessorBase {
 
         });
 
-        extractor.classes(EnableGraph.class, ElementKind.CLASS).forEach(tew -> {
+        extractor.classes(ComponentScan.class, ElementKind.CLASS).forEach(tew -> {
 
-            tew.annotationTypeMirrors(EnableGraph.class, "lazyBeans").forEach(typeMirror -> {
+            tew.annotationTypeMirrors(ComponentScan.class, "lazyBeans").forEach(typeMirror -> {
 
                 TypeName typeName = TypeNames.CLASS(typeMirror);
                 String name = types.asElement(typeMirror).getSimpleName().toString();

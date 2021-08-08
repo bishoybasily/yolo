@@ -15,9 +15,13 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
     @Autowired
-    protected lateinit var inputMethodManager: InputMethodManager
+    lateinit var inputMethodManager: InputMethodManager
+
     @Autowired
-    protected lateinit var testAspects: TestAspects
+    lateinit var testAspects: TestAspects
+
+    @Autowired
+    lateinit var testAspectsDummy: TestAspects
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         if (::testAspects.isInitialized)
             testAspects.doSomething()
         Snackbar.make(view, "Replace with your own action ${::inputMethodManager.isInitialized}", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
+            .setAction("Action", null).show()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

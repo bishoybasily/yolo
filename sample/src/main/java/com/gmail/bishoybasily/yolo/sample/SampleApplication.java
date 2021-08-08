@@ -1,11 +1,10 @@
 package com.gmail.bishoybasily.yolo.sample;
 
 import android.app.Application;
-
-import com.gmail.bishoybasily.yolo.annotations.EnableGraph;
+import com.gmail.bishoybasily.yolo.annotations.ComponentScan;
 import com.gmail.bishoybasily.yolo.generated.Graph;
 
-@EnableGraph(lazyBeans = {SampleApplication.class})
+@ComponentScan(lazyBeans = {SampleApplication.class})
 public class SampleApplication extends Application {
 
     @Override
