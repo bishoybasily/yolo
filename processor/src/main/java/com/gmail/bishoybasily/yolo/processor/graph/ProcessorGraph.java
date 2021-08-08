@@ -28,7 +28,6 @@ import javax.lang.model.element.ElementKind;
 import javax.lang.model.element.Modifier;
 
 @AutoService(Processor.class)
-//@SupportedSourceVersion(SourceVersion.RELEASE_8)
 @SupportedAnnotationTypes(Annotations.COMPONENT_SCAN)
 public class ProcessorGraph extends ProcessorBase {
 
