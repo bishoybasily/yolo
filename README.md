@@ -39,7 +39,7 @@ public class ApplicationConfiguration {
     @Bean
     @Scope("prototype")
     public User user() {
-        return User.dummy();
+        return new User;
     }
 
 }
@@ -73,35 +73,10 @@ class MainActivity : AppCompatActivity() {
 
         InjectorMainActivity.inject(this) // members injection
 
-        fab.setOnClickListener { view ->
-            if (currentFocus != null)
-                inputMethodManager.showSoftInput(currentFocus, InputMethodManager.SHOW_IMPLICIT)
-        }
-
-        val toggle = ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
-        drawerLayout.addDrawerListener(toggle)
-        toggle.syncState()
+        // you can use (user & inputMethodManager) here
 
     }
 
-    override fun onBackPressed() {
-        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
-            drawerLayout.closeDrawer(GravityCompat.START)
-        } else {
-            super.onBackPressed()
-        }
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        menuInflater.inflate(R.menu.main, menu)
-        return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.action_settings -> return true
-            else -> return super.onOptionsItemSelected(item)
-        }
-    }
+  
 
 } 
