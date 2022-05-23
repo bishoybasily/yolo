@@ -57,7 +57,7 @@ public class DemoYoloApplication extends Application {
     }
 }
 
-// sample activity the recives it's dependecies injected
+// sample activity
 @InjectMembers
 class MainActivity : AppCompatActivity() {
 
