@@ -39,7 +39,7 @@ public class ApplicationConfiguration {
     @Bean
     @Scope("prototype")
     public User user() {
-        return new User;
+        return new User();
     }
 
 }
