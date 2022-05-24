@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
     fun showSnackbar(view: View) {
         if (::testAspects.isInitialized)
             testAspects.doSomething()
-        Snackbar.make(view, "Replace with your own action ${::inputMethodManager.isInitialized}", Snackbar.LENGTH_LONG)
+        Snackbar.make(view, "is inputMethodManager initialized? ${::inputMethodManager.isInitialized}", Snackbar.LENGTH_LONG)
             .setAction("Action", null).show()
     }
 
