@@ -1,5 +1,6 @@
 package com.gmail.bishoybasily.yolo.sample
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -30,6 +31,8 @@ class MainActivity : AppCompatActivity() {
 
         InjectorMainActivity.inject(this)
 
+        WorkerDataFetcher.executeFetchCommentsJob(this, Intent().putExtra("", ""))
+
         fab.setOnClickListener { view ->
             showSnackbar(view)
         }
@@ -38,7 +41,11 @@ class MainActivity : AppCompatActivity() {
     fun showSnackbar(view: View) {
         if (::testAspects.isInitialized)
             testAspects.doSomething()
-        Snackbar.make(view, "is inputMethodManager initialized? ${::inputMethodManager.isInitialized}", Snackbar.LENGTH_LONG)
+        Snackbar.make(
+            view,
+            "is inputMethodManager initialized? ${::inputMethodManager.isInitialized}",
+            Snackbar.LENGTH_LONG
+        )
             .setAction("Action", null).show()
     }
 

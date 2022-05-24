@@ -4,6 +4,6 @@ public interface Annotations {
 
     String
             ENABLE_WORKER = "com.gmail.bishoybasily.yolo.annotations.EnableWorker",
-            COMPONENT_SCAN = "com.gmail.bishoybasily.yolo.annotations.ComponentScan";
+            ENABLE_GRAPH = "com.gmail.bishoybasily.yolo.annotations.EnableGraph";
 
 }
